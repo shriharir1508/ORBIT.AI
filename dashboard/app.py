@@ -1856,7 +1856,7 @@ elif module == "Meta Campaign":
                     config={"displayModeBar": False}
                 )
 
-    # --------------------------------------------------------
+        # --------------------------------------------------------
     # RIGHT: EFFICIENCY LEADERS
     # --------------------------------------------------------
 
@@ -1877,12 +1877,17 @@ elif module == "Meta Campaign":
             </div>
             """)
 
+            # Calculate cost per recorded result
             efficiency = (
                 mkt[mkt["results"] > 0]
-                .sort_values("cost_per_result", ascending=True)
+                .sort_values(
+                    "cost_per_result",
+                    ascending=True
+                )
                 .head(8)
             )
 
+            # Display efficiency ranking
             for rank, (_, row) in enumerate(
                 efficiency.iterrows(),
                 start=1
@@ -1894,12 +1899,14 @@ elif module == "Meta Campaign":
                     align-items:center;
                     gap:10px;
                     padding:11px 0;
-                    border-bottom:1px solid {T['border']};
+                    border-bottom:1px solid {T['card_border']};
                 ">
 
+                    <!-- Rank -->
                     <div style="
                         width:24px;
                         height:24px;
+                        min-width:24px;
                         border-radius:50%;
                         display:flex;
                         align-items:center;
@@ -1912,7 +1919,12 @@ elif module == "Meta Campaign":
                         {rank}
                     </div>
 
-                    <div style="flex:1; min-width:0;">
+                    <!-- Campaign information -->
+                    <div style="
+                        flex:1;
+                        min-width:0;
+                    ">
+
                         <div style="
                             font-size:0.76rem;
                             font-weight:700;
@@ -1931,8 +1943,10 @@ elif module == "Meta Campaign":
                         ">
                             {fmt_num(row['results'])} results
                         </div>
+
                     </div>
 
+                    <!-- Cost per result -->
                     <div style="
                         font-family:'JetBrains Mono';
                         font-size:0.76rem;
@@ -1944,7 +1958,6 @@ elif module == "Meta Campaign":
 
                 </div>
                 """)
-
     st.markdown("<div style='height:20px'></div>", unsafe_allow_html=True)
 
     # --------------------------------------------------------
