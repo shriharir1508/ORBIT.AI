@@ -603,13 +603,36 @@ def get_attrition():
 
 @st.cache_data
 def get_marketing_campaigns():
-    df = query("SELECT campaign, impressions, reach, results, amount_spent FROM marketing_campaign")
+    df = query(
+        "SELECT campaign_name AS campaign, impressions, reach, results, amount_spent "
+        "FROM marketing_campaign"
+    )
+
     if df.empty:
         df = pd.DataFrame([
-            {"campaign": "Meta Lead Generation Q1", "impressions": 450000, "reach": 320000, "results": 1420, "amount_spent": 115000},
-            {"campaign": "Acupuncture Awareness South", "impressions": 380000, "reach": 290000, "results": 1050, "amount_spent": 82000},
-            {"campaign": "Chronic Pain Relief Campaign", "impressions": 220000, "reach": 180000, "results": 748, "amount_spent": 50000},
+            {
+                "campaign": "Meta Lead Generation Q1",
+                "impressions": 450000,
+                "reach": 320000,
+                "results": 1420,
+                "amount_spent": 115000
+            },
+            {
+                "campaign": "Acupuncture Awareness South",
+                "impressions": 380000,
+                "reach": 290000,
+                "results": 1050,
+                "amount_spent": 82000
+            },
+            {
+                "campaign": "Chronic Pain Relief Campaign",
+                "impressions": 220000,
+                "reach": 180000,
+                "results": 748,
+                "amount_spent": 50000
+            },
         ])
+
     return df
 
 
