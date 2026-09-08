@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+
+.env
+.streamlit/secrets.toml
+
+data/processed/vector_db/
+database/orbit.db
+
+.vscode/

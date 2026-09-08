@@ -1,0 +1,40 @@
+employee_id,employee_name,designation,branch,active_status
+E001,Employee_E001,Receptionist,Madurai Anna Busstand,Active
+E002,Employee_E002,Doctor,Madurai Anna Busstand,Active
+E003,Employee_E003,Receptionist,Madurai Anna Busstand,Active
+E004,Employee_E004,Therapist,Madurai Anna Busstand,Active
+E005,Employee_E005,Therapist,Madurai Anna Busstand,Active
+E006,Employee_E006,Therapist,Madurai Anna Busstand,Active
+E007,Employee_E007,Therapist,Madurai Anna Busstand,Active
+E008,Employee_E008,Doctor,Madurai Anna Nagar,Active
+E009,Employee_E009,Receptionist,Madurai Anna Nagar,Active
+E010,Employee_E010,Therapist,Madurai Anna Nagar,Active
+E011,Employee_E011,Therapist,Madurai Anna Nagar,Active
+E012,Employee_E012,Therapist,Madurai Anna Nagar,Active
+E013,Employee_E013,Therapist,Madurai Anna Nagar,Active
+E014,Employee_E014,Therapist,Madurai Anna Nagar,Active
+E015,Employee_E015,Doctor,Chennai Alandur,Active
+E016,Employee_E016,Receptionist,Chennai Alandur,Active
+E017,Employee_E017,Training Manager,Chennai Alandur,Active
+E018,Employee_E018,Therapist,Chennai Alandur,Active
+E019,Employee_E019,Therapist,Chennai Alandur,Active
+E020,Employee_E020,Therapist,Chennai Alandur,Active
+E021,Employee_E021,Therapist,Chennai Alandur,Active
+E022,Employee_E022,Doctor,Chennai Anna Nagar,Active
+E023,Employee_E023,Therapist,Chennai Anna Nagar,Active
+E024,Employee_E024,Therapist,Chennai Anna Nagar,Active
+E025,Employee_E025,Receptionist,Chennai Anna Nagar,Active
+E026,Employee_E026,G.Desginer,Brand Office,Active
+E027,Employee_E027,G.Desginer,Brand Office,Active
+E028,Employee_E028,Digital Marketer,Brand Office,Active
+E029,Employee_E029,Video Editer/G.Desginer,Brand Office,Active
+E030,Employee_E030,Video Editer,Brand Office,Active
+E031,Employee_E031,Telecaller,Brand Office,Active
+E032,Employee_E032,Telecaller,Brand Office,Active
+E033,Employee_E033,Telecaller,Brand Office,Active
+E034,Employee_E034,Office Assitant,Sales Office,Active
+E035,Employee_E035,Office Assitant,Sales Office,Active
+E036,Employee_E036,HR Manager,Head Office,Active
+E037,Employee_E037,Sales Manager,Head Office,Active
+E038,Employee_E038,Helper,Head Office,Active
+E039,Employee_E039,Driver,Head Office,Active

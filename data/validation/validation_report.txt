@@ -1,0 +1,46 @@
+ORBIT.AI — DATA VALIDATION REPORT
+======================================================================
+PATIENTS: 391 rows × 14 columns
+Patients Followup: 0 fully duplicated row(s)
+Patients Followup: 0 missing cell(s)
+Patient ID repeated rows: 15
+MARKETING: 46 rows × 13 columns
+Total Meta Leads: 0 fully duplicated row(s)
+Total Meta Leads: 0 missing cell(s)
+Marketing attribution: No reliable patient-level or branch-level attribution field identified.
+SALES: 16 rows × 10 columns
+Total Sales Report: 0 fully duplicated row(s)
+Total Sales Report: 0 missing cell(s)
+Treatment reconciliation failures: 0
+Total sales reconciliation failures: 0
+OPERATIONS: 9 processed sheets
+bo_frm_01_opening.csv: 40 rows × 152 columns
+bo_frm_01_opening: 0 fully duplicated row(s)
+bo_frm_01_opening.csv: 40 non-empty extracted row(s); requires structural form inspection before database loading.
+bo_frm_07_a_housekeeping.csv: 25 rows × 64 columns
+bo_frm_07_a_housekeeping: 0 fully duplicated row(s)
+bo_frm_07_a_housekeeping.csv: 25 non-empty extracted row(s); requires structural form inspection before database loading.
+bo_frm_07_b_housekeeping.csv: 19 rows × 125 columns
+bo_frm_07_b_housekeeping: 7 fully duplicated row(s)
+bo_frm_07_b_housekeeping.csv: 11 non-empty extracted row(s); requires structural form inspection before database loading.
+bo_frm_20b_petty_cash.csv: 24 rows × 7 columns
+bo_frm_20b_petty_cash: 7 fully duplicated row(s)
+bo_frm_20b_petty_cash.csv: 16 non-empty extracted row(s); requires structural form inspection before database loading.
+bo_frm_21_closing.csv: 37 rows × 89 columns
+bo_frm_21_closing: 0 fully duplicated row(s)
+bo_frm_21_closing.csv: 37 non-empty extracted row(s); requires structural form inspection before database loading.
+bo_frm_22a_branch_report.csv: 26 rows × 88 columns
+bo_frm_22a_branch_report: 4 fully duplicated row(s)
+bo_frm_22a_branch_report.csv: 21 non-empty extracted row(s); requires structural form inspection before database loading.
+clinic_issues_manager.csv: 19 rows × 34 columns
+clinic_issues_manager: 0 fully duplicated row(s)
+employee_attendence.csv: 0 rows × 9 columns
+employee_attendence: 0 fully duplicated row(s)
+employee_list.csv: 39 rows × 5 columns
+employee_list: 0 fully duplicated row(s)
+EMPLOYEES: 39 rows × 5 columns
+Employee List: 0 fully duplicated row(s)
+Unique Employee IDs: 39
+
+VALIDATION COMPLETE
+No source files were modified.
