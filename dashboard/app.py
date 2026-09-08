@@ -1488,77 +1488,578 @@ elif module == "Attrition Risk":
 
 
 # ============================================================
-# MODULE: META CAMPAIGN (MARKETING DASHBOARD)
+# MODULE: META CAMPAIGN (MARKETING PERFORMANCE)
 # ============================================================
 
 elif module == "Meta Campaign":
-    mkt = get_marketing_campaigns()
-    tot_spend = mkt['amount_spent'].sum()
-    tot_leads = mkt['results'].sum()
-    tot_reach = mkt['reach'].sum()
-    cost_per_lead = tot_spend / tot_leads if tot_leads > 0 else 0
+
+    mkt = get_marketing_campaigns().copy()
+
+    if mkt.empty:
+        st.warning("No marketing campaign records are available.")
+        st.stop()
+
+    # --------------------------------------------------------
+    # DATA PREPARATION
+    # --------------------------------------------------------
+
+    numeric_cols = ["impressions", "reach", "results", "amount_spent"]
+
+    for col in numeric_cols:
+        if col in mkt.columns:
+            mkt[col] = pd.to_numeric(mkt[col], errors="coerce").fillna(0)
+
+    mkt["cost_per_result"] = (
+        mkt["amount_spent"] /
+        mkt["results"].replace(0, pd.NA)
+    ).fillna(0)
+
+    mkt["result_rate"] = (
+        mkt["results"] /
+        mkt["reach"].replace(0, pd.NA) * 100
+    ).fillna(0)
+
+    # Remove blank campaign names
+    mkt["campaign"] = (
+        mkt["campaign"]
+        .fillna("Unnamed Campaign")
+        .astype(str)
+        .str.strip()
+    )
+
+    # --------------------------------------------------------
+    # SUMMARY METRICS
+    # --------------------------------------------------------
+
+    total_spend = mkt["amount_spent"].sum()
+    total_results = mkt["results"].sum()
+    total_reach = mkt["reach"].sum()
+    total_impressions = mkt["impressions"].sum()
+
+    blended_cost_per_result = (
+        total_spend / total_results
+        if total_results > 0 else 0
+    )
+
+    average_result_rate = (
+        total_results / total_reach * 100
+        if total_reach > 0 else 0
+    )
+
+    # --------------------------------------------------------
+    # PAGE HEADER
+    # --------------------------------------------------------
+
+    html(f"""
+    <div style="
+        margin-bottom: 22px;
+        padding: 4px 0 8px 0;
+    ">
+        <div style="
+            font-size: 1.55rem;
+            font-weight: 800;
+            color: {T['text_primary']};
+            letter-spacing: -0.03em;
+        ">
+            Meta Campaign Performance
+        </div>
+
+        <div style="
+            margin-top: 5px;
+            color: {T['text_muted']};
+            font-size: 0.82rem;
+        ">
+            Campaign-level reach, results and advertising efficiency
+        </div>
+    </div>
+    """)
+
+    # --------------------------------------------------------
+    # KPI CARDS
+    # --------------------------------------------------------
+
+    k1, k2, k3, k4 = st.columns(4)
+
+    with k1:
+        with st.container(border=True):
+            html(f"""
+            <div style="padding: 4px 2px;">
+                <div style="
+                    font-size:0.70rem;
+                    font-weight:700;
+                    color:{T['text_muted']};
+                    text-transform:uppercase;
+                    letter-spacing:0.08em;
+                ">
+                    Campaign Results
+                </div>
+
+                <div style="
+                    font-size:1.65rem;
+                    font-weight:800;
+                    margin-top:8px;
+                    color:{T['text_primary']};
+                    font-family:'JetBrains Mono';
+                ">
+                    {fmt_num(total_results)}
+                </div>
+
+                <div style="
+                    font-size:0.72rem;
+                    margin-top:5px;
+                    color:{T['text_muted']};
+                ">
+                    Across {fmt_num(len(mkt))} campaign records
+                </div>
+            </div>
+            """)
+
+    with k2:
+        with st.container(border=True):
+            html(f"""
+            <div style="padding: 4px 2px;">
+                <div style="
+                    font-size:0.70rem;
+                    font-weight:700;
+                    color:{T['text_muted']};
+                    text-transform:uppercase;
+                    letter-spacing:0.08em;
+                ">
+                    Ad Spend
+                </div>
+
+                <div style="
+                    font-size:1.65rem;
+                    font-weight:800;
+                    margin-top:8px;
+                    color:{T['text_primary']};
+                    font-family:'JetBrains Mono';
+                ">
+                    {fmt_inr(total_spend)}
+                </div>
+
+                <div style="
+                    font-size:0.72rem;
+                    margin-top:5px;
+                    color:{T['text_muted']};
+                ">
+                    Spend before GST
+                </div>
+            </div>
+            """)
+
+    with k3:
+        with st.container(border=True):
+            html(f"""
+            <div style="padding: 4px 2px;">
+                <div style="
+                    font-size:0.70rem;
+                    font-weight:700;
+                    color:{T['text_muted']};
+                    text-transform:uppercase;
+                    letter-spacing:0.08em;
+                ">
+                    Cost / Result
+                </div>
+
+                <div style="
+                    font-size:1.65rem;
+                    font-weight:800;
+                    margin-top:8px;
+                    color:{T['teal_accent']};
+                    font-family:'JetBrains Mono';
+                ">
+                    {fmt_inr(blended_cost_per_result)}
+                </div>
+
+                <div style="
+                    font-size:0.72rem;
+                    margin-top:5px;
+                    color:{T['text_muted']};
+                ">
+                    Blended campaign efficiency
+                </div>
+            </div>
+            """)
+
+    with k4:
+        with st.container(border=True):
+            html(f"""
+            <div style="padding: 4px 2px;">
+                <div style="
+                    font-size:0.70rem;
+                    font-weight:700;
+                    color:{T['text_muted']};
+                    text-transform:uppercase;
+                    letter-spacing:0.08em;
+                ">
+                    Reach
+                </div>
+
+                <div style="
+                    font-size:1.65rem;
+                    font-weight:800;
+                    margin-top:8px;
+                    color:{T['text_primary']};
+                    font-family:'JetBrains Mono';
+                ">
+                    {fmt_num(total_reach)}
+                </div>
+
+                <div style="
+                    font-size:0.72rem;
+                    margin-top:5px;
+                    color:{T['text_muted']};
+                ">
+                    Total recorded reach
+                </div>
+            </div>
+            """)
+
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+
+    # --------------------------------------------------------
+    # MANAGEMENT INSIGHT
+    # --------------------------------------------------------
+
+    top_campaign = mkt.loc[mkt["results"].idxmax()]
+    efficient_campaigns = mkt[mkt["results"] > 0].sort_values(
+        "cost_per_result",
+        ascending=True
+    )
+
+    if not efficient_campaigns.empty:
+        efficient_campaign = efficient_campaigns.iloc[0]
+    else:
+        efficient_campaign = top_campaign
 
     html(f"""
     <div class="inference-banner">
-        <strong>INFERENCE:</strong>
-        <ul>
-            <li><strong>Ad Performance:</strong> Our marketing campaigns generated <strong>{fmt_num(tot_leads)}</strong> total leads with an ad spend of <strong>{fmt_inr(tot_spend)}</strong>.</li>
-            <li><strong>Cost Efficiency:</strong> The average cost per lead is approximately <strong>{fmt_inr(cost_per_lead)}</strong>, showing strong digital outreach across our regional clinic locations.</li>
+        <strong>CAMPAIGN INSIGHT</strong>
+
+        <ul style="margin-top:8px;">
+            <li>
+                <strong>Highest result volume:</strong>
+                {top_campaign['campaign']}
+                generated
+                <strong>{fmt_num(top_campaign['results'])}</strong>
+                results.
+            </li>
+
+            <li>
+                <strong>Lowest cost per result:</strong>
+                {efficient_campaign['campaign']}
+                recorded approximately
+                <strong>{fmt_inr(efficient_campaign['cost_per_result'])}</strong>
+                per result.
+            </li>
+
+            <li>
+                <strong>Overall:</strong>
+                {fmt_num(total_results)} results were recorded from
+                {fmt_inr(total_spend)} of advertising spend.
+            </li>
         </ul>
     </div>
     """)
 
-    col_mkt_1, col_mkt_2 = st.columns([1.0, 1.0])
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
 
-    with col_mkt_1:
+    # --------------------------------------------------------
+    # TOP CAMPAIGNS + EFFICIENCY
+    # --------------------------------------------------------
+
+    left, right = st.columns([1.55, 1.0])
+
+    # --------------------------------------------------------
+    # LEFT: TOP CAMPAIGNS
+    # --------------------------------------------------------
+
+    with left:
         with st.container(border=True):
+
             html(f"""
             <div class="box-header">
                 <div>
-                    <div class="box-title">Meta Campaign Summary</div>
-                    <div class="box-sub">Active ad campaigns and lead generation performance</div>
+                    <div class="box-title">
+                        Top Campaigns by Results
+                    </div>
+
+                    <div class="box-sub">
+                        Highest recorded campaign results
+                    </div>
                 </div>
             </div>
             """)
-            for _, r in mkt.iterrows():
-                html(f"""
-                <div class="tx-item">
-                    <div class="tx-info">
-                        <div class="tx-id">{r['campaign']}</div>
-                        <div class="tx-sub">Reach: {fmt_num(r['reach'])} | Spend: {fmt_inr(r['amount_spent'])}</div>
+
+            top10 = (
+                mkt
+                .sort_values("results", ascending=False)
+                .head(10)
+                .sort_values("results", ascending=True)
+            )
+
+            if HAS_PLOTLY:
+
+                fig = go.Figure(
+                    go.Bar(
+                        x=top10["results"],
+                        y=top10["campaign"],
+                        orientation="h",
+                        customdata=[
+                            [
+                                fmt_inr(spend),
+                                fmt_inr(cpr)
+                            ]
+                            for spend, cpr in zip(
+                                top10["amount_spent"],
+                                top10["cost_per_result"]
+                            )
+                        ],
+                        hovertemplate=(
+                            "<b>%{y}</b><br>"
+                            "Results: %{x}<br>"
+                            "Spend: %{customdata[0]}<br>"
+                            "Cost / Result: %{customdata[1]}"
+                            "<extra></extra>"
+                        ),
+                        marker_color=T["blue_accent"]
+                    )
+                )
+
+                fig.update_layout(
+                    paper_bgcolor="rgba(0,0,0,0)",
+                    plot_bgcolor="rgba(0,0,0,0)",
+                    height=420,
+                    margin=dict(l=10, r=20, t=10, b=10),
+                    xaxis=dict(
+                        title=None,
+                        showgrid=True,
+                        gridcolor=T["plotly_grid"],
+                        tickfont=dict(
+                            color=T["text_muted"],
+                            size=9
+                        )
+                    ),
+                    yaxis=dict(
+                        title=None,
+                        tickfont=dict(
+                            color=T["text_primary"],
+                            size=9
+                        )
+                    )
+                )
+
+                st.plotly_chart(
+                    fig,
+                    width="stretch",
+                    config={"displayModeBar": False}
+                )
+
+    # --------------------------------------------------------
+    # RIGHT: EFFICIENCY LEADERS
+    # --------------------------------------------------------
+
+    with right:
+        with st.container(border=True):
+
+            html(f"""
+            <div class="box-header">
+                <div>
+                    <div class="box-title">
+                        Cost Efficiency
                     </div>
-                    <div class="tx-pill">{fmt_num(r['results'])} Leads</div>
+
+                    <div class="box-sub">
+                        Lowest cost per recorded result
+                    </div>
+                </div>
+            </div>
+            """)
+
+            efficiency = (
+                mkt[mkt["results"] > 0]
+                .sort_values("cost_per_result", ascending=True)
+                .head(8)
+            )
+
+            for rank, (_, row) in enumerate(
+                efficiency.iterrows(),
+                start=1
+            ):
+
+                html(f"""
+                <div style="
+                    display:flex;
+                    align-items:center;
+                    gap:10px;
+                    padding:11px 0;
+                    border-bottom:1px solid {T['border']};
+                ">
+
+                    <div style="
+                        width:24px;
+                        height:24px;
+                        border-radius:50%;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        background:{T['teal_light']};
+                        color:{T['teal_accent']};
+                        font-size:0.68rem;
+                        font-weight:800;
+                    ">
+                        {rank}
+                    </div>
+
+                    <div style="flex:1; min-width:0;">
+                        <div style="
+                            font-size:0.76rem;
+                            font-weight:700;
+                            color:{T['text_primary']};
+                            white-space:nowrap;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                        ">
+                            {row['campaign']}
+                        </div>
+
+                        <div style="
+                            font-size:0.67rem;
+                            color:{T['text_muted']};
+                            margin-top:3px;
+                        ">
+                            {fmt_num(row['results'])} results
+                        </div>
+                    </div>
+
+                    <div style="
+                        font-family:'JetBrains Mono';
+                        font-size:0.76rem;
+                        font-weight:800;
+                        color:{T['text_primary']};
+                    ">
+                        {fmt_inr(row['cost_per_result'])}
+                    </div>
+
                 </div>
                 """)
 
-    with col_mkt_2:
-        with st.container(border=True):
-            html(f"""
-            <div class="box-header">
-                <div>
-                    <div class="box-title">Campaign Lead Conversion Comparison</div>
-                    <div class="box-sub">Leads generated per campaign</div>
+    st.markdown("<div style='height:20px'></div>", unsafe_allow_html=True)
+
+    # --------------------------------------------------------
+    # CAMPAIGN PERFORMANCE TABLE
+    # --------------------------------------------------------
+
+    with st.container(border=True):
+
+        html(f"""
+        <div class="box-header">
+            <div>
+                <div class="box-title">
+                    Campaign Performance
+                </div>
+
+                <div class="box-sub">
+                    Complete campaign-level performance record
                 </div>
             </div>
-            """)
-            if HAS_PLOTLY:
-                fig = go.Figure(go.Bar(
-                    x=mkt['campaign'],
-                    y=mkt['results'],
-                    marker_color=T['blue_accent'],
-                    customdata=[fmt_inr(v) for v in mkt['amount_spent']],
-                    hovertemplate='<b>%{x}</b><br>Leads: %{y}<br>Spend: %{customdata}<extra></extra>'
-                ))
-                fig.update_layout(
-                    paper_bgcolor='rgba(0,0,0,0)',
-                    plot_bgcolor='rgba(0,0,0,0)',
-                    height=280,
-                    margin=dict(l=10, r=10, t=10, b=10),
-                    xaxis=dict(showgrid=False, tickfont=dict(color=T['text_muted'], size=8)),
-                    yaxis=dict(gridcolor=T['plotly_grid'], tickfont=dict(color=T['text_muted'], size=9))
-                )
-                st.plotly_chart(fig, width='stretch', config={"displayModeBar": False})
+        </div>
+        """)
 
+        table_df = (
+            mkt[
+                [
+                    "campaign",
+                    "reach",
+                    "impressions",
+                    "results",
+                    "amount_spent",
+                    "cost_per_result",
+                    "result_rate"
+                ]
+            ]
+            .copy()
+        )
+
+        table_df = table_df.sort_values(
+            "results",
+            ascending=False
+        ).reset_index(drop=True)
+
+        table_df.index = table_df.index + 1
+
+        table_df.columns = [
+            "Campaign",
+            "Reach",
+            "Impressions",
+            "Results",
+            "Spend",
+            "Cost / Result",
+            "Result / Reach"
+        ]
+
+        st.dataframe(
+            table_df,
+            width="stretch",
+            height=500,
+            column_config={
+                "Campaign": st.column_config.TextColumn(
+                    "Campaign",
+                    width="large"
+                ),
+                "Reach": st.column_config.NumberColumn(
+                    "Reach",
+                    format="%d"
+                ),
+                "Impressions": st.column_config.NumberColumn(
+                    "Impressions",
+                    format="%d"
+                ),
+                "Results": st.column_config.NumberColumn(
+                    "Results",
+                    format="%d"
+                ),
+                "Spend": st.column_config.NumberColumn(
+                    "Spend",
+                    format="₹%.0f"
+                ),
+                "Cost / Result": st.column_config.NumberColumn(
+                    "Cost / Result",
+                    format="₹%.0f"
+                ),
+                "Result / Reach": st.column_config.NumberColumn(
+                    "Result / Reach",
+                    format="%.2f%%"
+                )
+            },
+            hide_index=False
+        )
+
+    # --------------------------------------------------------
+    # DATA NOTE
+    # --------------------------------------------------------
+
+    html(f"""
+    <div style="
+        margin-top:14px;
+        padding:12px 14px;
+        border:1px solid {T['border']};
+        border-radius:8px;
+        color:{T['text_muted']};
+        font-size:0.70rem;
+        line-height:1.6;
+    ">
+        <strong style="color:{T['text_primary']};">
+            Data note:
+        </strong>
+        "Results" represents the recorded Meta campaign result field
+        in the source dataset. It should not automatically be interpreted
+        as qualified leads, appointments, conversions or patients because
+        the current dataset does not contain lead-level qualification or
+        patient-attribution fields.
+    </div>
+    """)
 
 # ============================================================
 # MODULE: ASK ORBIT.AI (COPILOT)
