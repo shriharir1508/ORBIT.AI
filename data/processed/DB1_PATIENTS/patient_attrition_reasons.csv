@@ -1,0 +1,14 @@
+rank,patient_attrition_reason,reason_type,frequency
+1,Did Not Attend / Unreachable,Contact / Follow-up,38
+2,Medicine Only,Treatment Preference,20
+3,Out of Station,Accessibility,19
+4,Undergoing Allopathic Treatment,Treatment Preference,12
+5,Call Disconnected,Contact / Follow-up,7
+6,Cost / Financial Issue,Financial,6
+7,Long Distance,Accessibility,5
+8,No Improvement,Treatment Outcome,5
+9,Not Interested,Patient Preference,4
+10,Abroad,Accessibility,3
+11,No Response,Contact / Follow-up,3
+12,Will Come Next Week,Delayed Follow-up,3
+13,Work Busy / Will Come Next Month,Scheduling,3

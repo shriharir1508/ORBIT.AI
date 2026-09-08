@@ -1,0 +1,392 @@
+patient_id,branch,branch_city,date_of_first_sitting,disease,disease_category,sitting_count,followup_status,remark,days_since_first_sitting,engagement_level,contactability,followup_risk,treatment_continuation_status
+PT-F227B456,Madurai Anna Busstand,Madurai,2025-12-03,Diabetes,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,278,At Risk,Unreachable,High,Unknown
+PT-122F07F7,Madurai Anna Busstand,Madurai,2025-12-11,Cramp Pain,Musculoskeletal,1,No Response,Patient did not answer the call.,270,At Risk,Unreachable,High,Unknown
+PT-CD52D191,Madurai Anna Busstand,Madurai,2025-12-11,Fatty Liver,Digestive,1,No Response,Patient did not answer the call.,270,At Risk,Unreachable,High,Unknown
+PT-2E9A8A0B,Madurai Anna Busstand,Madurai,2025-12-11,Knee Pain,Musculoskeletal,2,No Response,Patient did not answer the call.,270,At Risk,Unreachable,High,Unknown
+PT-85458FBC,Madurai Anna Busstand,Madurai,2025-12-11,Eye Problem,Ophthalmic,2,Not Yet Contacted,No Remark,270,Pending,Not Contacted,Medium,Pending Follow-up
+PT-000293F7,Madurai Anna Busstand,Madurai,2025-12-11,Joint Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,270,Pending,Not Contacted,Medium,Pending Follow-up
+PT-783B2A0E,Madurai Anna Busstand,Madurai,2025-12-11,General Wellness,Wellness,1,Not Yet Contacted,No Remark,270,Pending,Not Contacted,Medium,Pending Follow-up
+PT-BB341DE1,Madurai Anna Busstand,Madurai,2025-12-11,Skin Disease,Dermatological,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,270,High Risk,Contact Established,High,Switched Treatment
+PT-A02755BB,Madurai Anna Busstand,Madurai,2025-12-11,Cervical,Musculoskeletal,2,Not Yet Contacted,No Remark,270,Pending,Not Contacted,Medium,Pending Follow-up
+PT-513DDB2C,Madurai Anna Busstand,Madurai,2025-12-11,Lumbar Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,270,Pending,Not Contacted,Medium,Pending Follow-up
+PT-6ED98F94,Madurai Anna Busstand,Madurai,2025-12-15,Ulcer,Digestive,8,No Response,Patient did not answer the call.,266,At Risk,Unreachable,Medium,Unknown
+PT-0EFDD60E,Madurai Anna Busstand,Madurai,2025-12-17,Diabetes,Metabolic/Endocrine,2,No Response,Patient did not answer the call.,264,At Risk,Unreachable,High,Unknown
+PT-62AC4E57,Madurai Anna Busstand,Madurai,2025-12-19,Heel Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,262,Pending,Not Contacted,Medium,Pending Follow-up
+PT-676497BB,Madurai Anna Busstand,Madurai,2025-12-23,Eye Issue,Ophthalmic,0,Discontinued,Patient did not continue treatment.,258,High Risk,Contact Established,High,Discontinued
+PT-9E0EBB72,Madurai Anna Busstand,Madurai,2025-12-27,Knee Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,254,Pending,Not Contacted,Medium,Pending Follow-up
+PT-4E1C16E4,Madurai Anna Busstand,Madurai,2025-12-30,Diabetes,Metabolic/Endocrine,1,No Response,Camp patient did not attend the call.,251,At Risk,Unreachable,High,Unknown
+PT-EFC89A8E,Madurai Anna Busstand,Madurai,2025-12-30,Neck Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,251,Pending,Not Contacted,Medium,Pending Follow-up
+PT-07A28F98,Madurai Anna Busstand,Madurai,2025-12-31,Diabetic Neuropathy,Metabolic/Endocrine,1,Camp Registered,Patient was registered through a camp.,250,Other,Contact Established,Medium,Other
+PT-17EBF32C,Madurai Anna Busstand,Madurai,2026-01-02,Diabetes,Metabolic/Endocrine,4,Temporarily Unavailable,Patient is currently out of station.,248,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-E8CD94E4,Madurai Anna Busstand,Madurai,2026-01-02,Digestive Problem,Digestive,1,Camp Registered,Patient was registered through a camp.,248,Other,Contact Established,Medium,Other
+PT-64E599A5,Madurai Anna Busstand,Madurai,2026-01-05,Leg Pain,Musculoskeletal,1,Camp Registered,Patient was registered through a camp.,245,Other,Contact Established,Medium,Other
+PT-8D9939D1,Madurai Anna Busstand,Madurai,2026-01-05,Lower Back Pain,Musculoskeletal,1,No Response,Patient did not answer the call.,245,At Risk,Unreachable,High,Unknown
+PT-73ED3B9A,Madurai Anna Busstand,Madurai,2026-01-09,General Wellness,Wellness,1,Camp Registered,Patient was registered through a camp.,241,Other,Contact Established,Medium,Other
+PT-2B0D9F2B,Madurai Anna Busstand,Madurai,2026-01-10,General Wellness,Wellness,2,No Response,Patient did not answer the call.,240,At Risk,Unreachable,High,Unknown
+PT-B25B08E8,Madurai Anna Busstand,Madurai,2026-01-10,Knee Pain,Musculoskeletal,3,No Response,Patient did not answer the call.,240,At Risk,Unreachable,Medium,Unknown
+PT-C9A168DA,Madurai Anna Busstand,Madurai,2026-01-14,Diabetes,Metabolic/Endocrine,1,Temporarily Unavailable,Patient is currently out of station.,236,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-ED717929,Madurai Anna Busstand,Madurai,2026-01-14,Cold,Respiratory,1,Temporarily Unavailable,Patient is currently out of station.,236,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-A557AAB0,Madurai Anna Busstand,Madurai,2026-01-18,Neck Pain,Musculoskeletal,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,232,High Risk,Contact Established,High,Switched Treatment
+PT-EDDB2C9E,Madurai Anna Busstand,Madurai,2026-01-18,Diabetes,Metabolic/Endocrine,3,No Response,Patient did not answer the call.,232,At Risk,Unreachable,Medium,Unknown
+PT-BC68EB76,Madurai Anna Busstand,Madurai,2026-01-18,Ckd and Diabetes,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,232,At Risk,Unreachable,High,Unknown
+PT-4612326B,Madurai Anna Busstand,Madurai,2026-01-21,Weight Management,Vascular/Other,1,Camp Registered,Patient was registered through a camp.,229,Other,Contact Established,Medium,Other
+PT-5EC7BB30,Madurai Anna Busstand,Madurai,2026-01-22,Bloating,Digestive,3,No Response,Patient did not answer the call.,228,At Risk,Unreachable,Medium,Unknown
+PT-98B91853,Madurai Anna Busstand,Madurai,2026-01-22,Diabetes,Metabolic/Endocrine,3,Switched to Medicines/Other Treatment,Patient continued with medicines only.,228,High Risk,Contact Established,High,Switched Treatment
+PT-D7E343FE,Madurai Anna Busstand,Madurai,2026-01-24,Hair Fall,Dermatological,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,226,High Risk,Contact Established,High,Switched Treatment
+PT-F0A482F6,Madurai Anna Busstand,Madurai,2026-01-24,Shoulder Pain,Musculoskeletal,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,226,High Risk,Contact Established,High,Switched Treatment
+PT-33A088CC,Madurai Anna Busstand,Madurai,2026-01-25,Joint Pain,Musculoskeletal,1,No Response,Camp patient did not attend the call.,225,At Risk,Unreachable,High,Unknown
+PT-B24E1535,Madurai Anna Busstand,Madurai,2026-01-25,Diabetes,Metabolic/Endocrine,1,No Response,Camp patient did not attend the call.,225,At Risk,Unreachable,High,Unknown
+PT-5B84F5A6,Madurai Anna Busstand,Madurai,2026-01-25,Liver Problem,Digestive,1,No Response,Camp patient did not attend the call.,225,At Risk,Unreachable,High,Unknown
+PT-2867E31C,Madurai Anna Busstand,Madurai,2026-01-25,Shoulder Pain,Musculoskeletal,1,No Response,Camp patient did not attend the call.,225,At Risk,Unreachable,High,Unknown
+PT-6F984B8A,Madurai Anna Busstand,Madurai,2026-01-26,Tounge Problem,ENT/Dental,1,No Response,Camp patient did not attend the call.,224,At Risk,Unreachable,High,Unknown
+PT-F34C0A73,Madurai Anna Busstand,Madurai,2026-01-26,Diabetes,Metabolic/Endocrine,1,No Response,Camp patient did not attend the call.,224,At Risk,Unreachable,High,Unknown
+PT-CDA17AC9,Madurai Anna Busstand,Madurai,2026-01-26,Lower Back Pain,Musculoskeletal,1,No Response,Camp patient did not attend the call.,224,At Risk,Unreachable,High,Unknown
+PT-F8DF802A,Madurai Anna Busstand,Madurai,2026-01-26,Hypertension,Metabolic/Endocrine,1,No Response,Camp patient did not attend the call.,224,At Risk,Unreachable,High,Unknown
+PT-0ED68958,Madurai Anna Busstand,Madurai,2026-01-27,Ulcer,Digestive,1,No Response,Camp patient did not attend the call.,223,At Risk,Unreachable,High,Unknown
+PT-CA8A3C31,Madurai Anna Busstand,Madurai,2026-01-30,Joint Pain,Musculoskeletal,3,Temporarily Unavailable,Patient is currently out of station.,220,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-EB8A82EF,Madurai Anna Busstand,Madurai,2026-02-07,Diabetes,Metabolic/Endocrine,1,Temporarily Unavailable,Patient is currently out of station.,212,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-FF7DFA66,Madurai Anna Busstand,Madurai,2026-02-16,Gastric Problem,Digestive,3,Temporarily Unavailable,Patient is currently out of station.,203,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-5E0F6247,Madurai Anna Busstand,Madurai,2026-02-18,Numbness,Musculoskeletal,1,No Response,Patient did not answer the call.,201,At Risk,Unreachable,High,Unknown
+PT-CA81DB31,Madurai Anna Busstand,Madurai,2026-02-19,Digestive Problem,Digestive,1,Temporarily Unavailable,Patient is currently abroad.,200,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-D1E88C48,Madurai Anna Busstand,Madurai,2026-02-19,Diabetes and Joint Pain,Metabolic/Endocrine,1,Temporarily Unavailable,Patient is currently abroad.,200,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-D5764A41,Madurai Anna Busstand,Madurai,2026-02-25,Tiredness,Neuro/General Wellness,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,194,High Risk,Contact Established,High,Switched Treatment
+PT-B8DED7AA,Madurai Anna Busstand,Madurai,2026-02-26,Foot Irritation,Musculoskeletal,3,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,193,High Risk,Contact Established,High,Switched Treatment
+PT-47FFBBBD,Madurai Anna Busstand,Madurai,2026-02-27,Cervical Pain,Musculoskeletal,1,Temporarily Unavailable,Patient is currently out of station.,192,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-D1FCA490,Madurai Anna Busstand,Madurai,2026-02-28,Breathing Difficulty,Respiratory,6,No Response,Patient did not answer the call.,191,At Risk,Unreachable,Medium,Unknown
+PT-D780488F,Madurai Anna Busstand,Madurai,2026-03-01,Piles,Digestive,1,Discontinued,Patient is not interested in continuing treatment.,190,High Risk,Contact Established,High,Discontinued
+PT-730104BB,Madurai Anna Busstand,Madurai,2026-03-01,Fatty Liver,Digestive,1,Discontinued,Patient is not interested in continuing treatment.,190,High Risk,Contact Established,High,Discontinued
+PT-6E0674A5,Madurai Anna Busstand,Madurai,2026-03-01,Foot Pain,Musculoskeletal,1,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,190,High Risk,Contact Established,High,Switched Treatment
+PT-A1C1724F,Madurai Anna Busstand,Madurai,2026-03-03,Diabetes,Metabolic/Endocrine,3,Discontinued,Patient is not interested in continuing treatment.,188,High Risk,Contact Established,High,Discontinued
+PT-004D5683,Madurai Anna Busstand,Madurai,2026-03-05,Hernia,Digestive,2,Temporarily Unavailable,Patient is currently out of station.,186,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-CD9AE707,Madurai Anna Busstand,Madurai,2026-03-07,Ulcer,Digestive,1,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,184,High Risk,Contact Established,High,Switched Treatment
+PT-439E6171,Madurai Anna Busstand,Madurai,2026-03-07,Diabetes,Metabolic/Endocrine,2,No Response,Patient did not answer the call.,184,At Risk,Unreachable,High,Unknown
+PT-DF9B29AC,Madurai Anna Busstand,Madurai,2026-03-07,Sweating,Neuro/General Wellness,1,No Response,Patient did not answer the call.,184,At Risk,Unreachable,High,Unknown
+PT-B6EF8807,Madurai Anna Busstand,Madurai,2026-03-13,Fatty Liver,Digestive,2,Temporarily Unavailable,Patient reported being unavailable due to college commitments.,178,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-E958CAAE,Madurai Anna Busstand,Madurai,2026-03-13,Joint Pain,Musculoskeletal,1,No Response,Patient did not answer the call.,178,At Risk,Unreachable,High,Unknown
+PT-E915DD05,Madurai Anna Busstand,Madurai,2026-03-15,Allergies,Dermatological,0,Discontinued,Patient did not continue treatment and continued with medicines.,176,High Risk,Contact Established,High,Discontinued
+PT-222DA8CA,Madurai Anna Busstand,Madurai,2026-03-17,Diabetes,Metabolic/Endocrine,6,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,174,High Risk,Contact Established,High,Switched Treatment
+PT-961A7B54,Madurai Anna Busstand,Madurai,2026-03-18,Hypertension,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,173,At Risk,Unreachable,High,Unknown
+PT-7F424ECE,Madurai Anna Busstand,Madurai,2026-03-19,Body Pain,Musculoskeletal,1,Discontinued,Patient is not interested in continuing treatment.,172,High Risk,Contact Established,High,Discontinued
+PT-7F7427E4,Madurai Anna Busstand,Madurai,2026-03-20,Hair Fall,Dermatological,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,171,High Risk,Contact Established,High,Switched Treatment
+PT-C4DD113B,Madurai Anna Busstand,Madurai,2026-03-21,Heel Pain,Musculoskeletal,0,Discontinued,Patient did not continue treatment and continued with medicines.,170,High Risk,Contact Established,High,Discontinued
+PT-24EB4C5A,Madurai Anna Busstand,Madurai,2026-03-22,Weight Management,Vascular/Other,1,No Response,Patient did not answer the call.,169,At Risk,Unreachable,High,Unknown
+PT-4942A9DA,Madurai Anna Busstand,Madurai,2026-03-22,Varicose Vein,Vascular/Other,2,Switched to Medicines/Other Treatment,Leech only…. allopathy treatment.,169,High Risk,Contact Established,High,Switched Treatment
+PT-1393E4E8,Madurai Anna Busstand,Madurai,2026-03-23,Rashes,Musculoskeletal,1,No Response,Patient did not answer the call.,168,At Risk,Unreachable,High,Unknown
+PT-25C5AED5,Madurai Anna Busstand,Madurai,2026-03-24,Diabetes,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,167,At Risk,Unreachable,High,Unknown
+PT-704D696C,Madurai Anna Busstand,Madurai,2026-03-25,Diabetes,Metabolic/Endocrine,1,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,166,High Risk,Contact Established,High,Switched Treatment
+PT-A3F4F1F5,Madurai Anna Busstand,Madurai,2026-03-28,Diabetes,Metabolic/Endocrine,0,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,163,High Risk,Contact Established,High,Switched Treatment
+PT-BBBBF33A,Madurai Anna Busstand,Madurai,2026-04-04,Rashes,Musculoskeletal,4,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,156,High Risk,Contact Established,High,Switched Treatment
+PT-7CF9CD52,Madurai Anna Busstand,Madurai,2026-04-04,High Cholesterol,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,156,At Risk,Unreachable,High,Unknown
+PT-796B2CE4,Madurai Anna Busstand,Madurai,2026-04-05,Lower Back Pain,Musculoskeletal,5,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,155,High Risk,Contact Established,High,Switched Treatment
+PT-C8126D19,Madurai Anna Busstand,Madurai,2026-04-07,Diabetes,Metabolic/Endocrine,2,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,153,High Risk,Contact Established,High,Switched Treatment
+PT-02153DD4,Madurai Anna Busstand,Madurai,2026-04-25,Ear Pain,ENT/Dental,1,Temporarily Unavailable,Patient is currently out of station.,135,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-F547DACB,Madurai Anna Busstand,Madurai,2026-04-26,Skin Allergy,Dermatological,1,Temporarily Unavailable,Patient reported being unavailable due to college commitments.,134,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-A83FAB81,Madurai Anna Busstand,Madurai,2026-05-05,Diabetes,Metabolic/Endocrine,1,Switched to Medicines/Other Treatment,Patient continued with medicines only.,125,High Risk,Contact Established,High,Switched Treatment
+PT-8203829F,Madurai Anna Busstand,Madurai,2026-05-05,Fatty Liver,Digestive,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,125,High Risk,Contact Established,High,Switched Treatment
+PT-159526E8,Madurai Anna Busstand,Madurai,2026-05-05,Skin Problem,Dermatological,1,Switched to Medicines/Other Treatment,Patient continued with medicines only.,125,High Risk,Contact Established,High,Switched Treatment
+PT-A9714AA5,Madurai Anna Busstand,Madurai,2026-05-05,Diabetes,Metabolic/Endocrine,0,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,125,High Risk,Contact Established,High,Switched Treatment
+PT-E0E2DD49,Madurai Anna Busstand,Madurai,2026-05-08,Constipation,Digestive,1,No Response,Patient did not answer the call.,122,At Risk,Unreachable,High,Unknown
+PT-45828B11,Madurai Anna Busstand,Madurai,2026-05-10,Nasal,Respiratory,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,120,High Risk,Contact Established,High,Switched Treatment
+PT-D52C3FCA,Madurai Anna Busstand,Madurai,2026-05-13,Lower Back Pain,Musculoskeletal,1,Temporarily Unavailable,Patient is currently out of station.,117,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-F01656B5,Madurai Anna Busstand,Madurai,2026-05-18,Diabetes,Metabolic/Endocrine,1,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,112,High Risk,Contact Established,High,Switched Treatment
+PT-9ABFBD1C,Madurai Anna Busstand,Madurai,2026-05-19,Kidney Stone,Renal/Urological,2,No Response,Patient did not answer the call.,111,At Risk,Unreachable,High,Unknown
+PT-678AECA8,Madurai Anna Busstand,Madurai,2026-05-21,Gall Blader,Digestive,1,Switched to Medicines/Other Treatment,They are undergoing allopathic treatment.,109,High Risk,Contact Established,High,Switched Treatment
+PT-D6C5D74E,Madurai Anna Busstand,Madurai,2026-05-21,Gastric Problem,Digestive,1,Temporarily Unavailable,Patient is currently out of station.,109,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-8477B992,Madurai Anna Busstand,Madurai,2026-05-22,Knee Pain,Musculoskeletal,1,Temporarily Unavailable,Patient is currently out of station.,108,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-696F0464,Madurai Anna Busstand,Madurai,2026-05-30,Lower Back Pain,Musculoskeletal,1,Temporarily Unavailable,Patient is currently out of station.,100,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-7EB7994A,Madurai Anna Nagar,Madurai,2025-12-04,Gastric Problem,Digestive,4,Improved / Resolved,Patient reported that the condition had improved or resolved.,277,Positive,Contact Established,Low,Completed/Improved
+PT-7D77DC28,Madurai Anna Nagar,Madurai,2025-12-07,Cold and Cough,Respiratory,5,No Response,Patient did not answer the call.,274,At Risk,Unreachable,Medium,Unknown
+PT-5A7185C4,Madurai Anna Nagar,Madurai,2025-12-13,Diabetes,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,268,At Risk,Unreachable,High,Unknown
+PT-93DF5BFB,Madurai Anna Nagar,Madurai,2025-12-14,Varicose Vein,Vascular/Other,2,Temporarily Unavailable,"Long distance, I will come next week.",267,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-B319C95F,Madurai Anna Nagar,Madurai,2025-12-15,Foot Burning,Musculoskeletal,3,No Response,Patient did not answer the call.,266,At Risk,Unreachable,Medium,Unknown
+PT-91762206,Madurai Anna Nagar,Madurai,2025-12-30,Heel Pain,Musculoskeletal,1,No Response,Patient disconnected the call.,251,At Risk,Unreachable,High,Unknown
+PT-F305112F,Madurai Anna Nagar,Madurai,2025-12-31,Back Pain,Musculoskeletal,2,Reported Complication,Patient reported a leg fracture.,250,Attention Required,Contact Established,Medium,Other
+PT-9151B54F,Madurai Anna Nagar,Madurai,2025-12-31,Varicose Vein,Vascular/Other,4,No Response,Patient did not answer the call.,250,At Risk,Unreachable,Medium,Unknown
+PT-FF4BCF2D,Madurai Anna Nagar,Madurai,2025-12-31,Skin Problem,Dermatological,4,No Response,Patient did not answer the call.,250,At Risk,Unreachable,Medium,Unknown
+PT-0E20956D,Madurai Anna Nagar,Madurai,2026-01-02,Foot Pain,Musculoskeletal,2,No Response,Patient did not answer the call.,248,At Risk,Unreachable,High,Unknown
+PT-4F668431,Madurai Anna Nagar,Madurai,2026-01-03,General Wellness,Wellness,1,No Response,Patient did not answer the call.,247,At Risk,Unreachable,High,Unknown
+PT-898B5AC4,Madurai Anna Nagar,Madurai,2026-01-06,Diabetes,Metabolic/Endocrine,4,Reported Complication,Patient reported insufficient improvement.,244,Attention Required,Contact Established,Medium,Other
+PT-6B2A0130,Madurai Anna Nagar,Madurai,2026-01-08,Itching,Dermatological,1,No Response,Patient did not answer the call.,242,At Risk,Unreachable,High,Unknown
+PT-8533A8AF,Madurai Anna Nagar,Madurai,2026-01-09,Leg Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,241,Pending,Not Contacted,Medium,Pending Follow-up
+PT-6F6354A9,Madurai Anna Nagar,Madurai,2026-01-10,Stress,Neuro/General Wellness,3,Reported Complication,Patient reported insufficient improvement.,240,Attention Required,Contact Established,Medium,Other
+PT-8EB56535,Madurai Anna Nagar,Madurai,2026-01-11,Leg Pain,Musculoskeletal,1,No Response,Patient did not answer the call.,239,At Risk,Unreachable,High,Unknown
+PT-B734960B,Madurai Anna Nagar,Madurai,2026-01-11,Diabetes,Metabolic/Endocrine,2,Temporarily Unavailable,Patient reported being busy with work and planned to return next month.,239,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-CA31AACB,Madurai Anna Nagar,Madurai,2026-01-11,Wheezing,Respiratory,1,Reported Complication,Patient reported insufficient improvement.,239,Attention Required,Contact Established,Medium,Other
+PT-B20A4AD7,Madurai Anna Nagar,Madurai,2026-01-11,Leg Pain,Musculoskeletal,2,Temporarily Unavailable,Patient is currently out of station.,239,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-FBB56950,Madurai Anna Nagar,Madurai,2026-01-12,General Health Concern,Wellness,1,Not Yet Contacted,No Remark,238,Pending,Not Contacted,Medium,Pending Follow-up
+PT-7E5634BE,Madurai Anna Nagar,Madurai,2026-01-13,Kidney Stone,Renal/Urological,1,Not Yet Contacted,No Remark,237,Pending,Not Contacted,Medium,Pending Follow-up
+PT-CDCC4039,Madurai Anna Nagar,Madurai,2026-01-14,General Wellness,Wellness,1,Not Yet Contacted,No Remark,236,Pending,Not Contacted,Medium,Pending Follow-up
+PT-AB1FA726,Madurai Anna Nagar,Madurai,2026-01-18,Cervical,Musculoskeletal,1,Not Yet Contacted,No Remark,232,Pending,Not Contacted,Medium,Pending Follow-up
+PT-EF48FFB4,Madurai Anna Nagar,Madurai,2026-01-18,General Wellness,Wellness,1,Temporarily Unavailable,Patient is currently abroad.,232,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-26240E2A,Madurai Anna Nagar,Madurai,2026-01-19,Knee Pain,Musculoskeletal,2,Temporarily Unavailable,"Long distance, I will come next week.",231,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-7A45F782,Madurai Anna Nagar,Madurai,2026-01-19,Knee Pain,Musculoskeletal,2,Temporarily Unavailable,"Long distance, I will come next week.",231,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-EF00EDD2,Madurai Anna Nagar,Madurai,2026-01-20,Neck Pain,Musculoskeletal,2,Not Yet Contacted,No Remark,230,Pending,Not Contacted,Medium,Pending Follow-up
+PT-936F4E71,Madurai Anna Nagar,Madurai,2026-01-20,Heel Pain,Musculoskeletal,1,Temporarily Unavailable,"I'm out of station, i will come next month.",230,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-E8F01B3E,Madurai Anna Nagar,Madurai,2026-01-22,Joint Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,228,Pending,Not Contacted,Medium,Pending Follow-up
+PT-DBD26314,Madurai Anna Nagar,Madurai,2026-01-22,General Wellness,Wellness,1,Not Yet Contacted,No Remark,228,Pending,Not Contacted,Medium,Pending Follow-up
+PT-3D7001FD,Madurai Anna Nagar,Madurai,2026-01-22,Knee Pain,Musculoskeletal,2,Temporarily Unavailable,"I'm out of station, i will come next month.",228,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-8698B69E,Madurai Anna Nagar,Madurai,2026-01-22,General Wellness,Wellness,2,Temporarily Unavailable,Patient reported travel distance as a barrier.,228,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-E937AADA,Madurai Anna Nagar,Madurai,2026-01-22,General Wellness,Wellness,2,Temporarily Unavailable,Patient reported travel distance as a barrier.,228,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-30F814AA,Madurai Anna Nagar,Madurai,2026-01-23,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,227,Pending,Not Contacted,Medium,Pending Follow-up
+PT-33A317C0,Madurai Anna Nagar,Madurai,2026-01-24,Knee Pain,Musculoskeletal,2,Not Yet Contacted,No Remark,226,Pending,Not Contacted,Medium,Pending Follow-up
+PT-C8C3A9E2,Madurai Anna Nagar,Madurai,2026-01-26,General Health Concern,Wellness,1,Not Yet Contacted,No Remark,224,Pending,Not Contacted,Medium,Pending Follow-up
+PT-AC837C54,Madurai Anna Nagar,Madurai,2026-01-27,General Wellness,Wellness,4,Temporarily Unavailable,Patient reported being busy with work and planned to return next month.,223,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-D8F19A30,Madurai Anna Nagar,Madurai,2026-01-28,General Health Concern,Wellness,1,Not Yet Contacted,No Remark,222,Pending,Not Contacted,Medium,Pending Follow-up
+PT-3D98A459,Madurai Anna Nagar,Madurai,2026-01-28,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,222,Pending,Not Contacted,Medium,Pending Follow-up
+PT-68DFF4F5,Madurai Anna Nagar,Madurai,2026-01-29,General Wellness,Wellness,1,Other,Patient continued with steam therapy only.,221,Other,Contact Established,Medium,Other
+PT-38048758,Madurai Anna Nagar,Madurai,2026-02-05,Diabetes,Metabolic/Endocrine,1,Reported Complication,Patient reported insufficient improvement.,214,Attention Required,Contact Established,Medium,Other
+PT-5E92784E,Madurai Anna Nagar,Madurai,2026-02-06,Back Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,213,Pending,Not Contacted,Medium,Pending Follow-up
+PT-4D91C0A1,Madurai Anna Nagar,Madurai,2026-02-06,Varicose Vein,Vascular/Other,1,No Response,Patient did not answer the call.,213,At Risk,Unreachable,High,Unknown
+PT-7827FFEC,Madurai Anna Nagar,Madurai,2026-02-14,Urine Problem,Renal/Urological,4,Not Yet Contacted,No Remark,205,Pending,Not Contacted,Medium,Pending Follow-up
+PT-5E5E1BE6,Madurai Anna Nagar,Madurai,2026-02-14,Knee Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,205,Pending,Not Contacted,Medium,Pending Follow-up
+PT-D2EA2461,Madurai Anna Nagar,Madurai,2026-02-14,Thyroid Disorder,Metabolic/Endocrine,2,No Response,"After treatment pain increased, did did not attend phone calls.",205,At Risk,Unreachable,High,Unknown
+PT-8AFC0B07,Madurai Anna Nagar,Madurai,2026-02-14,Knee Pain,Musculoskeletal,1,Other,Medicine not suitable for her body.,205,Other,Contact Established,Medium,Other
+PT-9154C013,Madurai Anna Nagar,Madurai,2026-02-14,Diabetes,Metabolic/Endocrine,2,Not Yet Contacted,No Remark,205,Pending,Not Contacted,Medium,Pending Follow-up
+PT-82068EB3,Madurai Anna Nagar,Madurai,2026-02-14,Skin Problem,Dermatological,0,Temporarily Unavailable,"Did not pick up the call, long distance.",205,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-941E6652,Madurai Anna Nagar,Madurai,2026-02-15,General Health Concern,Wellness,1,Not Yet Contacted,No Remark,204,Pending,Not Contacted,Medium,Pending Follow-up
+PT-599A7AAA,Madurai Anna Nagar,Madurai,2026-02-19,Diabetes,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,200,At Risk,Unreachable,High,Unknown
+PT-A88D2003,Madurai Anna Nagar,Madurai,2026-02-19,Fatty Liver,Digestive,1,Other,Patient reported that medicines were not taken consistently.,200,Other,Contact Established,Medium,Other
+PT-4B83C52F,Madurai Anna Nagar,Madurai,2026-02-21,Diabetes,Metabolic/Endocrine,3,No Response,Patient disconnected the call.,198,At Risk,Unreachable,Medium,Unknown
+PT-DE2CB1A4,Madurai Anna Nagar,Madurai,2026-02-24,Leg Swelling,Musculoskeletal,0,Not Yet Contacted,No Remark,195,Pending,Not Contacted,Medium,Pending Follow-up
+PT-84835955,Madurai Anna Nagar,Madurai,2026-02-26,Sinus Problem,Respiratory,1,Not Yet Contacted,No Remark,193,Pending,Not Contacted,Medium,Pending Follow-up
+PT-22C3C1B1,Madurai Anna Nagar,Madurai,2026-02-27,Diabetes,Metabolic/Endocrine,2,Other,Patient continued treatment at the Chennai branch.,192,Other,Contact Established,Medium,Other
+PT-1EACC197,Madurai Anna Nagar,Madurai,2026-02-28,General Health Concern,Wellness,3,Not Yet Contacted,No Remark,191,Pending,Not Contacted,Medium,Pending Follow-up
+PT-27A3CC72,Madurai Anna Nagar,Madurai,2026-03-01,Teeth Problem,ENT/Dental,2,No Response,Patient did not answer the call.,190,At Risk,Unreachable,High,Unknown
+PT-7D29FED9,Madurai Anna Nagar,Madurai,2026-03-02,Fatty Liver,Digestive,1,No Response,Patient disconnected the call.,189,At Risk,Unreachable,High,Unknown
+PT-32788CCA,Madurai Anna Nagar,Madurai,2026-03-05,Knee Pain,Musculoskeletal,1,Temporarily Unavailable,Patient reported being busy with work and planned to return next month.,186,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-C8395D5C,Madurai Anna Nagar,Madurai,2026-03-05,Urinary Infection,Renal/Urological,3,Other,I'll come july 1st.,186,Other,Contact Established,Medium,Other
+PT-2E75826A,Madurai Anna Nagar,Madurai,2026-03-06,Knee Pain,Musculoskeletal,1,Temporarily Unavailable,Patient's phone line was busy.,185,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-4B5D62F1,Madurai Anna Nagar,Madurai,2026-03-08,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,183,Pending,Not Contacted,Medium,Pending Follow-up
+PT-CB3AAFAF,Madurai Anna Nagar,Madurai,2026-03-12,Constipation,Digestive,1,Not Yet Contacted,No Remark,179,Pending,Not Contacted,Medium,Pending Follow-up
+PT-2AA756EA,Madurai Anna Nagar,Madurai,2026-03-15,Sinus Problem,Respiratory,1,Not Yet Contacted,No Remark,176,Pending,Not Contacted,Medium,Pending Follow-up
+PT-C703E238,Madurai Anna Nagar,Madurai,2026-03-18,Body Heat,Neuro/General Wellness,2,No Response,Patient did not answer the call.,173,At Risk,Unreachable,High,Unknown
+PT-D996D2B4,Madurai Anna Nagar,Madurai,2026-03-18,Varicose Vein,Vascular/Other,1,Temporarily Unavailable,Patient is currently abroad.,173,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-3235C6B3,Madurai Anna Nagar,Madurai,2026-03-25,Stress,Neuro/General Wellness,1,No Response,Patient did not answer the call.,166,At Risk,Unreachable,High,Unknown
+PT-4EB381A8,Madurai Anna Nagar,Madurai,2026-03-25,Sinus Problem,Respiratory,1,Not Yet Contacted,No Remark,166,Pending,Not Contacted,Medium,Pending Follow-up
+PT-E124A712,Madurai Anna Nagar,Madurai,2026-03-29,General Health Concern,Wellness,1,Not Yet Contacted,No Remark,162,Pending,Not Contacted,Medium,Pending Follow-up
+PT-B23FCE9E,Madurai Anna Nagar,Madurai,2026-03-31,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,160,Pending,Not Contacted,Medium,Pending Follow-up
+PT-B7BADB03,Madurai Anna Nagar,Madurai,2026-03-31,Varicose Vein,Vascular/Other,1,Not Yet Contacted,No Remark,160,Pending,Not Contacted,Medium,Pending Follow-up
+PT-7CD59194,Madurai Anna Nagar,Madurai,2026-04-01,Diabetes,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,159,At Risk,Unreachable,High,Unknown
+PT-2E155991,Madurai Anna Nagar,Madurai,2026-04-03,Diabetes,Metabolic/Endocrine,1,Other,"Her relative pg therapist, did not pick up the call.",157,Other,Contact Established,Medium,Other
+PT-52200081,Madurai Anna Nagar,Madurai,2026-04-03,Gastric Problem,Digestive,1,Not Yet Contacted,No Remark,157,Pending,Not Contacted,Medium,Pending Follow-up
+PT-A2277831,Madurai Anna Nagar,Madurai,2026-04-08,Thyroid Disorder,Metabolic/Endocrine,1,Temporarily Unavailable,Patient reported travel distance as a barrier.,152,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-F33F93A0,Madurai Anna Nagar,Madurai,2026-04-08,Body Heat,Neuro/General Wellness,2,Temporarily Unavailable,Patient reported travel distance as a barrier.,152,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-CB18E02D,Madurai Anna Nagar,Madurai,2026-04-09,Knee Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,151,Pending,Not Contacted,Medium,Pending Follow-up
+PT-4F510AA2,Madurai Anna Nagar,Madurai,2026-04-09,Ulcer,Digestive,2,No Response,Patient did not answer the call.,151,At Risk,Unreachable,High,Unknown
+PT-0BF919C2,Madurai Anna Nagar,Madurai,2026-04-09,Diabetes,Metabolic/Endocrine,2,Temporarily Unavailable,Patient planned to return next week.,151,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-9EA51B45,Madurai Anna Nagar,Madurai,2026-04-13,Skin Problem,Dermatological,2,Other,Patient planned to return on Saturday.,147,Other,Contact Established,Medium,Other
+PT-74395124,Madurai Anna Nagar,Madurai,2026-04-14,Kaal Aani,Musculoskeletal,1,Other,After treatment foot pain increased.,146,Other,Contact Established,Medium,Other
+PT-DD4881F9,Madurai Anna Nagar,Madurai,2026-04-17,Diabetes,Metabolic/Endocrine,2,Temporarily Unavailable,Patient planned to return next week.,143,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-BC2162D6,Madurai Anna Nagar,Madurai,2026-04-19,Gastric Problem,Digestive,1,No Response,Patient disconnected the call.,141,At Risk,Unreachable,High,Unknown
+PT-70FD615F,Madurai Anna Nagar,Madurai,2026-04-20,Detox / Wellness,Wellness,1,No Response,Patient did not answer the call.,140,At Risk,Unreachable,High,Unknown
+PT-3A609893,Madurai Anna Nagar,Madurai,2026-04-20,General Health Concern,Wellness,1,Not Yet Contacted,No Remark,140,Pending,Not Contacted,Medium,Pending Follow-up
+PT-527167B5,Madurai Anna Nagar,Madurai,2026-04-21,Leg Pain and Stroke,Musculoskeletal,1,No Response,Patient disconnected the call.,139,At Risk,Unreachable,High,Unknown
+PT-5DFF236C,Madurai Anna Nagar,Madurai,2026-04-21,Varicose Vein,Vascular/Other,1,No Response,Patient did not answer the call.,139,At Risk,Unreachable,High,Unknown
+PT-20934593,Madurai Anna Nagar,Madurai,2026-04-24,Diabetes,Metabolic/Endocrine,1,No Response,Patient disconnected the call.,136,At Risk,Unreachable,High,Unknown
+PT-CED0AEAA,Madurai Anna Nagar,Madurai,2026-04-26,Leg Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,134,Pending,Not Contacted,Medium,Pending Follow-up
+PT-FDFA2EE0,Madurai Anna Nagar,Madurai,2026-04-27,Diabetes,Metabolic/Endocrine,2,Other,Patient was at work and planned to call back.,133,Other,Contact Established,Medium,Other
+PT-2D294639,Madurai Anna Nagar,Madurai,2026-05-04,Diabetes,Metabolic/Endocrine,1,Other,Patient reported undergoing eye surgery.,126,Other,Contact Established,Medium,Other
+PT-1D56CDF7,Madurai Anna Nagar,Madurai,2026-05-05,Lower Back Pain,Musculoskeletal,3,No Response,Patient disconnected the call.,125,At Risk,Unreachable,Medium,Unknown
+PT-7DC81611,Madurai Anna Nagar,Madurai,2026-05-05,Lower Back Pain,Musculoskeletal,2,Reported Complication,Patient reported insufficient improvement.,125,Attention Required,Contact Established,Medium,Other
+PT-26DF4D81,Madurai Anna Nagar,Madurai,2026-05-05,Heel Pain and Back Pain,Musculoskeletal,2,Other,Patient reported a financial constraint.,125,Other,Contact Established,Medium,Other
+PT-2B7DF0C5,Madurai Anna Nagar,Madurai,2026-05-05,Lower Back Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,125,Pending,Not Contacted,Medium,Pending Follow-up
+PT-017E3DCC,Madurai Anna Nagar,Madurai,2026-05-10,Diabetes,Metabolic/Endocrine,2,Temporarily Unavailable,Patient planned to return next week.,120,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-56725CB5,Madurai Anna Nagar,Madurai,2026-05-11,Skin Problem,Dermatological,3,Temporarily Unavailable,"Out of station, medicines continued.",119,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-2B0C3C48,Madurai Anna Nagar,Madurai,2026-05-16,Shoulder Pain,Musculoskeletal,3,Temporarily Unavailable,Patient planned to return next week.,114,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-5D78F962,Madurai Anna Nagar,Madurai,2026-05-16,General Wellness,Wellness,1,Not Yet Contacted,No Remark,114,Pending,Not Contacted,Medium,Pending Follow-up
+PT-DAA09E6A,Madurai Anna Nagar,Madurai,2026-05-16,Skin Problem,Dermatological,1,No Response,Patient did not answer the call.,114,At Risk,Unreachable,High,Unknown
+PT-C7CD42FA,Madurai Anna Nagar,Madurai,2026-05-18,Foot Irritation,Musculoskeletal,1,Temporarily Unavailable,Patient's phone line was busy.,112,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-816BDB06,Madurai Anna Nagar,Madurai,2026-05-18,Foot Irritation,Musculoskeletal,1,No Response,Patient did not answer the call.,112,At Risk,Unreachable,High,Unknown
+PT-F4164AE0,Madurai Anna Nagar,Madurai,2026-05-19,Weight Management,Vascular/Other,2,Not Yet Contacted,No Remark,111,Pending,Not Contacted,Medium,Pending Follow-up
+PT-E657AA27,Madurai Anna Nagar,Madurai,2026-05-19,Infection,Vascular/Other,1,No Response,"After treatment pain increased, did did not attend phone calls.",111,At Risk,Unreachable,High,Unknown
+PT-90989526,Madurai Anna Nagar,Madurai,2026-05-19,Hernia,Digestive,1,Temporarily Unavailable,"Said, out of station.",111,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-C81EED48,Madurai Anna Nagar,Madurai,2026-05-22,Diabetes,Metabolic/Endocrine,1,Other,Patient stopped medicines due to family circumstances.,108,Other,Contact Established,Medium,Other
+PT-0C9EE614,Madurai Anna Nagar,Madurai,2026-05-23,Leg Pain,Musculoskeletal,2,Temporarily Unavailable,Patient is currently abroad.,107,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-FEE9C97F,Madurai Anna Nagar,Madurai,2026-05-31,Stomach Upset,Digestive,2,Temporarily Unavailable,Patient reported travel distance as a barrier.,99,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-CD33D14F,Madurai Anna Nagar,Madurai,2026-05-31,Rashes,Musculoskeletal,2,Temporarily Unavailable,Patient planned to return next month.,99,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-580102EE,Chennai Alandur,Chennai,2025-12-06,Multiple Kidney Stones,Renal/Urological,2,Not Yet Contacted,No Remark,275,Pending,Not Contacted,Medium,Pending Follow-up
+PT-050FB301,Chennai Alandur,Chennai,2025-12-06,Obesity,Vascular/Other,2,Not Yet Contacted,No Remark,275,Pending,Not Contacted,Medium,Pending Follow-up
+PT-3E99B0C0,Chennai Alandur,Chennai,2025-12-06,Diabetes,Metabolic/Endocrine,6,Other,Patient reported an ongoing problem and planned to return later.,275,Other,Contact Established,Medium,Other
+PT-CB30ABED,Chennai Alandur,Chennai,2025-12-06,Varicose Vein Pain,Vascular/Other,1,No Response,did not attend 22/2/2026 2/3/2026.,275,At Risk,Unreachable,High,Unknown
+PT-2913AF38,Chennai Alandur,Chennai,2025-12-07,Pimples,Dermatological,2,No Response,did not attend(30-1-2026).,274,At Risk,Unreachable,High,Unknown
+PT-DF6946DD,Chennai Alandur,Chennai,2025-12-07,Cervical,Musculoskeletal,1,Not Yet Contacted,No Remark,274,Pending,Not Contacted,Medium,Pending Follow-up
+PT-58C51705,Chennai Alandur,Chennai,2025-12-07,Full Body Heat,Neuro/General Wellness,3,Not Yet Contacted,No Remark,274,Pending,Not Contacted,Medium,Pending Follow-up
+PT-C840BF78,Chennai Alandur,Chennai,2025-12-12,Pain In Chest Region,Cardiac/Chest,1,No Response,did not attend 2/3/2026 9/3/2026.,269,At Risk,Unreachable,High,Unknown
+PT-F77C1809,Chennai Alandur,Chennai,2025-12-13,Thyroid Disorder and Itching,Metabolic/Endocrine,2,No Response,Patient disconnected the call.,268,At Risk,Unreachable,High,Unknown
+PT-BB1AE0F3,Chennai Alandur,Chennai,2025-12-13,Diabetes,Metabolic/Endocrine,1,Other,Patient did not respond.,268,Other,Contact Established,Medium,Other
+PT-3EEF4CE1,Chennai Alandur,Chennai,2025-12-19,Diabetes,Metabolic/Endocrine,5,No Response,did not attend 16/3/2026-12/4/2026.,262,At Risk,Unreachable,Medium,Unknown
+PT-954F93BF,Chennai Alandur,Chennai,2025-12-19,Wrist Neck Pain,Musculoskeletal,1,No Response,Not attend9-10/3/2026.,262,At Risk,Unreachable,High,Unknown
+PT-22E1C8B6,Chennai Alandur,Chennai,2025-12-30,Giddiness Mental Stress,Neuro/General Wellness,1,No Response,did not attend 24/3/2026 2/4/2026 12/4/2026.,251,At Risk,Unreachable,High,Unknown
+PT-B0054C64,Chennai Alandur,Chennai,2026-01-04,Memory Loss,Neuro/General Wellness,1,No Response,did not attend(11/1/2026)(12/2/2026).,246,At Risk,Unreachable,High,Unknown
+PT-FB773A55,Chennai Alandur,Chennai,2026-01-06,Disc Compression,Musculoskeletal,1,No Response,did not attend(20/1/2026)(29/1/2026).,244,At Risk,Unreachable,High,Unknown
+PT-73C943D6,Chennai Alandur,Chennai,2026-01-07,Bloating and Burning Sensation,Digestive,1,Other,Under siddha Treatment(KERALA).,243,Other,Contact Established,Medium,Other
+PT-B9E825AF,Chennai Alandur,Chennai,2026-01-12,Scaly Patches,Dermatological,1,Not Yet Contacted,No Remark,238,Pending,Not Contacted,Medium,Pending Follow-up
+PT-FCCD8E7F,Chennai Alandur,Chennai,2026-01-12,Pain Increase In Shoulder Point,Musculoskeletal,1,Other,Patient reported a financial constraint.,238,Other,Contact Established,Medium,Other
+PT-0155CDF0,Chennai Alandur,Chennai,2026-01-22,Hernia,Digestive,2,No Response,did not attend 12/4/2026.,228,At Risk,Unreachable,High,Unknown
+PT-807B4E7E,Chennai Alandur,Chennai,2026-01-26,Psoriasis,Dermatological,1,No Response,did not attend 12/4/2026.,224,At Risk,Unreachable,High,Unknown
+PT-8AB2855C,Chennai Alandur,Chennai,2026-02-07,Hernia,Digestive,5,Other,Patient reported leg swelling and will provide further details during the next visit.,212,Other,Contact Established,Medium,Other
+PT-877F7D7F,Chennai Alandur,Chennai,2026-02-07,Bilateral Knee Pain,Musculoskeletal,1,No Response,did not attend.,212,At Risk,Unreachable,High,Unknown
+PT-752E1279,Chennai Alandur,Chennai,2026-02-07,Thyroid Disorder,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,212,Pending,Not Contacted,Medium,Pending Follow-up
+PT-D5A2541E,Chennai Alandur,Chennai,2026-02-07,Sciatica,Musculoskeletal,1,Other,Not answer on 13/04/2026.,212,Other,Contact Established,Medium,Other
+PT-EA262E35,Chennai Alandur,Chennai,2026-02-07,Both Leg Heavy Itching,Musculoskeletal,1,Other,"Switched off 27/2/2026,3/3/2026.",212,Other,Contact Established,Medium,Other
+PT-BF4642EC,Chennai Alandur,Chennai,2026-02-07,Chronic Gastric Problem,Digestive,1,Other,"Switched off 27/2/2026,3/3/2026.",212,Other,Contact Established,Medium,Other
+PT-B50F9ABE,Chennai Alandur,Chennai,2026-02-08,Mild Slow Movemnet(Hand),Musculoskeletal,1,No Response,"did not attend 22/2/2026,11/3/2026,17/3/2026.",211,At Risk,Unreachable,High,Unknown
+PT-0B553722,Chennai Alandur,Chennai,2026-02-10,Haifall,Dermatological,2,Temporarily Unavailable,Patient planned to return next month.,209,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-23611670,Chennai Alandur,Chennai,2026-02-14,Hypertension,Metabolic/Endocrine,7,Temporarily Unavailable,Patient planned to return next week.,205,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-E7F63B40,Chennai Alandur,Chennai,2026-02-25,Peripheral Neuropathy,Neurological,1,Not Yet Contacted,No Remark,194,Pending,Not Contacted,Medium,Pending Follow-up
+PT-607274E2,Chennai Alandur,Chennai,2026-02-26,Joint Pain and Numbness,Musculoskeletal,2,Temporarily Unavailable,Patient planned to return next week.,193,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-F29B8F5F,Chennai Alandur,Chennai,2026-02-28,One Side Headache and Sinus Problem,Respiratory,1,Other,Death in home.,191,Other,Contact Established,Medium,Other
+PT-1D693CEB,Chennai Alandur,Chennai,2026-03-02,Back Pain Increase,Musculoskeletal,1,No Response,Patient did not attend the scheduled visit.,189,At Risk,Unreachable,High,Unknown
+PT-D70D0D1D,Chennai Alandur,Chennai,2026-03-04,Fatty Liver and Shoulder Pain,Musculoskeletal,2,Improved / Resolved,Patient reported that the condition had improved or resolved.,187,Positive,Contact Established,Low,Completed/Improved
+PT-51E62F0F,Chennai Alandur,Chennai,2026-03-07,Sciatic Pain,Musculoskeletal,1,Other,Will call when come to chennai.,184,Other,Contact Established,Medium,Other
+PT-51F1C19E,Chennai Alandur,Chennai,2026-03-07,Varicose Vein,Vascular/Other,2,No Response,did not attend.,184,At Risk,Unreachable,High,Unknown
+PT-0A65B6E3,Chennai Alandur,Chennai,2026-03-08,Generalized Itching,Dermatological,1,No Response,did not attend on 25/04/2026.,183,At Risk,Unreachable,High,Unknown
+PT-7FC8D9DC,Chennai Alandur,Chennai,2026-03-10,Blackish Discolouration Of Leg,Musculoskeletal,1,Other,Patient was transferred to the Madurai branch.,181,Other,Contact Established,Medium,Other
+PT-61A47C34,Chennai Alandur,Chennai,2026-03-11,Fatty Liver and Shoulder Pain,Musculoskeletal,1,Temporarily Unavailable,Patient is currently abroad.,180,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-2DF1E0D7,Chennai Alandur,Chennai,2026-03-12,Swelling Of Left Side Index Finger,Vascular/Other,2,No Response,did not attend 2/4/2026.,179,At Risk,Unreachable,High,Unknown
+PT-EE2C8E94,Chennai Alandur,Chennai,2026-03-15,Diabetes,Metabolic/Endocrine,5,No Response,Patient did not answer the call.,176,At Risk,Unreachable,Medium,Unknown
+PT-09C8A84C,Chennai Alandur,Chennai,2026-03-28,Wheezing,Respiratory,1,No Response,did not attend did not attend on 22/04/2026.,163,At Risk,Unreachable,High,Unknown
+PT-BFD6CA3F,Chennai Alandur,Chennai,2026-03-28,Burning Sensation Leg,Musculoskeletal,1,No Response,did not attend did not attend on 22/04/2026.,163,At Risk,Unreachable,High,Unknown
+PT-1E864DEA,Chennai Alandur,Chennai,2026-03-28,Sciatica Pain,Musculoskeletal,2,Other,Came in yesterday 12/04/2026.,163,Other,Contact Established,Medium,Other
+PT-375E0D21,Chennai Alandur,Chennai,2026-03-31,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,160,Pending,Not Contacted,Medium,Pending Follow-up
+PT-B96C6C38,Chennai Alandur,Chennai,2026-04-03,Cold,Respiratory,2,Other,Coming on thursday 14/05/2026.,157,Other,Contact Established,Medium,Other
+PT-EC7BC82F,Chennai Alandur,Chennai,2026-04-03,Diabetes,Metabolic/Endocrine,4,Other,Incorrect contact number reported.,157,Other,Contact Established,Medium,Other
+PT-83FAED3D,Chennai Alandur,Chennai,2026-05-07,Bilateral Knee Pain,Musculoskeletal,1,Switched to Medicines/Other Treatment,Patient started allopathic medication.,123,High Risk,Contact Established,High,Switched Treatment
+PT-397307DD,Chennai Alandur,Chennai,2026-05-15,Urine Infection,Renal/Urological,1,Discontinued,Patient discontinued treatment due to cost concerns.,115,High Risk,Contact Established,High,Discontinued
+PT-48F16B2F,Chennai Alandur,Chennai,2026-05-20,Diabetes,Metabolic/Endocrine,2,Reported Complication,Patient reported insufficient improvement and decided not to continue treatment.,110,Attention Required,Contact Established,Medium,Other
+PT-463BC911,Chennai Alandur,Chennai,2026-06-21,Diabetes,Metabolic/Endocrine,1,Other,Patient reported that the treatment was not suitable.,78,Other,Contact Established,Medium,Other
+PT-B96C6C38,Chennai Alandur,Chennai,2026-04-03,Cold,Respiratory,2,Not Yet Contacted,No Remark,157,Pending,Not Contacted,Medium,Pending Follow-up
+PT-B00E345D,Chennai Alandur,Chennai,2026-04-10,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,150,Pending,Not Contacted,Medium,Pending Follow-up
+PT-70A8E07A,Chennai Alandur,Chennai,2026-04-11,Arthritis,Musculoskeletal,7,Not Yet Contacted,No Remark,149,Pending,Not Contacted,Medium,Pending Follow-up
+PT-0BED9800,Chennai Alandur,Chennai,2026-04-19,Swelling Of Leg,Musculoskeletal,1,Not Yet Contacted,No Remark,141,Pending,Not Contacted,Medium,Pending Follow-up
+PT-A069EAFA,Chennai Alandur,Chennai,2026-04-25,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,135,Pending,Not Contacted,Medium,Pending Follow-up
+PT-62C01D43,Chennai Alandur,Chennai,2026-04-25,Itching Knee Jonid Paine,Musculoskeletal,1,Not Yet Contacted,No Remark,135,Pending,Not Contacted,Medium,Pending Follow-up
+PT-57D02B63,Chennai Alandur,Chennai,2026-04-25,Diabetes,Metabolic/Endocrine,2,Not Yet Contacted,No Remark,135,Pending,Not Contacted,Medium,Pending Follow-up
+PT-7F245856,Chennai Alandur,Chennai,2026-04-26,Gastric Problem,Digestive,1,Not Yet Contacted,No Remark,134,Pending,Not Contacted,Medium,Pending Follow-up
+PT-4F406C62,Chennai Alandur,Chennai,2026-04-27,Neck Pain and Shoulder Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,133,Pending,Not Contacted,Medium,Pending Follow-up
+PT-62257CCD,Chennai Alandur,Chennai,2026-04-29,Gastroesophageal reflux disease,Digestive,2,Not Yet Contacted,No Remark,131,Pending,Not Contacted,Medium,Pending Follow-up
+PT-669959D7,Chennai Alandur,Chennai,2026-05-01,Dryness Itching,Dermatological,1,Not Yet Contacted,No Remark,129,Pending,Not Contacted,Medium,Pending Follow-up
+PT-83FAED3D,Chennai Alandur,Chennai,2026-05-07,Bilateral Knee Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,123,Pending,Not Contacted,Medium,Pending Follow-up
+PT-61E05E8E,Chennai Alandur,Chennai,2026-05-15,Numbness and Lower Back Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,115,Pending,Not Contacted,Medium,Pending Follow-up
+PT-397307DD,Chennai Alandur,Chennai,2026-05-15,Urine Infection,Renal/Urological,1,Not Yet Contacted,No Remark,115,Pending,Not Contacted,Medium,Pending Follow-up
+PT-D1B8061F,Chennai Alandur,Chennai,2026-05-19,Diabetes,Metabolic/Endocrine,2,Not Yet Contacted,No Remark,111,Pending,Not Contacted,Medium,Pending Follow-up
+PT-56384C88,Chennai Alandur,Chennai,2026-06-02,Weight Management,Vascular/Other,3,Not Yet Contacted,No Remark,97,Pending,Not Contacted,Medium,Pending Follow-up
+PT-83FAED3D,Chennai Alandur,Chennai,2026-05-07,Bilateral Knee Pain,Musculoskeletal,2,Not Yet Contacted,No Remark,123,Pending,Not Contacted,Medium,Pending Follow-up
+PT-4D09D46D,Chennai Alandur,Chennai,2026-06-05,Numbness and Lower Back Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,94,Pending,Not Contacted,Medium,Pending Follow-up
+PT-910ECD67,Chennai Alandur,Chennai,2026-05-10,Knee Joint Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,120,Pending,Not Contacted,Medium,Pending Follow-up
+PT-1F7B4F35,Chennai Alandur,Chennai,2026-06-05,Unknown,Unknown,1,Not Yet Contacted,No Remark,94,Pending,Not Contacted,Medium,Pending Follow-up
+PT-EC7BC82F,Chennai Alandur,Chennai,2026-04-03,Diabetes,Metabolic/Endocrine,2,Not Yet Contacted,No Remark,157,Pending,Not Contacted,Medium,Pending Follow-up
+PT-5115A5D7,Chennai Alandur,Chennai,2026-06-05,Lower Back Pain,Musculoskeletal,4,Not Yet Contacted,No Remark,94,Pending,Not Contacted,Medium,Pending Follow-up
+PT-46508BE0,Chennai Alandur,Chennai,2026-06-05,Gastric Problem and Sleeplessness,Digestive,3,Not Yet Contacted,No Remark,94,Pending,Not Contacted,Medium,Pending Follow-up
+PT-61E05E8E,Chennai Alandur,Chennai,2026-05-15,Numbness and Lower Back Pain,Musculoskeletal,7,Not Yet Contacted,No Remark,115,Pending,Not Contacted,Medium,Pending Follow-up
+PT-B00E345D,Chennai Alandur,Chennai,2026-04-10,Lower Back Pain,Musculoskeletal,2,Not Yet Contacted,No Remark,150,Pending,Not Contacted,Medium,Pending Follow-up
+PT-397307DD,Chennai Alandur,Chennai,2026-05-15,Urine Infection,Renal/Urological,4,Not Yet Contacted,No Remark,115,Pending,Not Contacted,Medium,Pending Follow-up
+PT-70A8E07A,Chennai Alandur,Chennai,2026-04-11,Arthritis,Musculoskeletal,1,Not Yet Contacted,No Remark,149,Pending,Not Contacted,Medium,Pending Follow-up
+PT-093821E0,Chennai Alandur,Chennai,2026-04-12,Shoulder Pain,Musculoskeletal,2,Not Yet Contacted,No Remark,148,Pending,Not Contacted,Medium,Pending Follow-up
+PT-48F16B2F,Chennai Alandur,Chennai,2026-05-20,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,110,Pending,Not Contacted,Medium,Pending Follow-up
+PT-0BED9800,Chennai Alandur,Chennai,2026-04-19,Swelling Of Leg,Musculoskeletal,2,Not Yet Contacted,No Remark,141,Pending,Not Contacted,Medium,Pending Follow-up
+PT-83B418FC,Chennai Alandur,Chennai,2026-04-18,Irregular Periods,Renal/Urological,1,Not Yet Contacted,No Remark,142,Pending,Not Contacted,Medium,Pending Follow-up
+PT-E4B1316D,Chennai Alandur,Chennai,2026-06-08,Fatty Liver,Digestive,3,Not Yet Contacted,No Remark,91,Pending,Not Contacted,Medium,Pending Follow-up
+PT-3BA9BD0C,Chennai Alandur,Chennai,2026-06-10,Numbness,Musculoskeletal,1,Not Yet Contacted,No Remark,89,Pending,Not Contacted,Medium,Pending Follow-up
+PT-A069EAFA,Chennai Alandur,Chennai,2026-04-25,Irregular Periods,Renal/Urological,2,Not Yet Contacted,No Remark,135,Pending,Not Contacted,Medium,Pending Follow-up
+PT-9C94F069,Chennai Alandur,Chennai,2026-06-12,Dry Scaly Patches,Dermatological,4,Not Yet Contacted,No Remark,87,Pending,Not Contacted,Medium,Pending Follow-up
+PT-57D02B63,Chennai Alandur,Chennai,2026-04-25,Neck Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,135,Pending,Not Contacted,Medium,Pending Follow-up
+PT-7F245856,Chennai Alandur,Chennai,2026-04-26,Gastric Problem,Digestive,2,Not Yet Contacted,No Remark,134,Pending,Not Contacted,Medium,Pending Follow-up
+PT-8EA2596E,Chennai Alandur,Chennai,2026-06-19,Pricking Pain,Neurological,2,Not Yet Contacted,No Remark,80,Pending,Not Contacted,Medium,Pending Follow-up
+PT-66B616B6,Chennai Alandur,Chennai,2026-06-19,Thyroid Disorder,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,80,Pending,Not Contacted,Medium,Pending Follow-up
+PT-62257CCD,Chennai Alandur,Chennai,2026-04-29,Thyroid Disorder,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,131,Pending,Not Contacted,Medium,Pending Follow-up
+PT-AA3F0C39,Chennai Anna Nagar,Chennai,2025-08-12,Hip Pain,Musculoskeletal,2,Other,Patient did not respond.,391,Other,Contact Established,Medium,Other
+PT-35E31E3A,Chennai Anna Nagar,Chennai,2025-11-12,Burning Sensation,Neurological,1,Not Yet Contacted,No Remark,299,Pending,Not Contacted,Medium,Pending Follow-up
+PT-890DC52D,Chennai Anna Nagar,Chennai,2025-12-13,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,268,Pending,Not Contacted,Medium,Pending Follow-up
+PT-7F5772B2,Chennai Anna Nagar,Chennai,2025-12-13,Diabetes,Metabolic/Endocrine,3,Not Yet Contacted,No Remark,268,Pending,Not Contacted,Medium,Pending Follow-up
+PT-25386B04,Chennai Anna Nagar,Chennai,2025-12-13,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,268,Pending,Not Contacted,Medium,Pending Follow-up
+PT-4CC2DC85,Chennai Anna Nagar,Chennai,2025-12-13,Joint Pain,Musculoskeletal,5,Other,Patient reported dissatisfaction with treatment.,268,Other,Contact Established,Medium,Other
+PT-ABF49958,Chennai Anna Nagar,Chennai,2025-12-13,Spinal Problem,Musculoskeletal,1,Not Yet Contacted,No Remark,268,Pending,Not Contacted,Medium,Pending Follow-up
+PT-BA5C1EC7,Chennai Anna Nagar,Chennai,2025-12-13,Eye Vision Problem,Ophthalmic,0,Discontinued,Patient did not continue treatment.,268,High Risk,Contact Established,High,Discontinued
+PT-1A634B66,Chennai Anna Nagar,Chennai,2025-12-13,Brain Weekness,Neuro/General Wellness,0,Discontinued,Patient did not continue treatment.,268,High Risk,Contact Established,High,Discontinued
+PT-260E6E6E,Chennai Anna Nagar,Chennai,2025-12-13,Stoke,Neurological,0,Discontinued,Patient did not continue treatment.,268,High Risk,Contact Established,High,Discontinued
+PT-F6498251,Chennai Anna Nagar,Chennai,2025-12-13,Varicose Vein,Vascular/Other,0,Discontinued,Patient did not continue treatment.,268,High Risk,Contact Established,High,Discontinued
+PT-DCC900FD,Chennai Anna Nagar,Chennai,2025-12-13,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,268,High Risk,Contact Established,High,Discontinued
+PT-DE699922,Chennai Anna Nagar,Chennai,2025-12-13,Hernia,Digestive,0,Discontinued,Patient did not continue treatment.,268,High Risk,Contact Established,High,Discontinued
+PT-18D6E774,Chennai Anna Nagar,Chennai,2025-12-13,Thyroid Disorder,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,268,High Risk,Contact Established,High,Discontinued
+PT-DBDC1FCF,Chennai Anna Nagar,Chennai,2025-12-13,Hair Fall,Dermatological,0,Discontinued,Patient did not continue treatment.,268,High Risk,Contact Established,High,Discontinued
+PT-0A6AD3FD,Chennai Anna Nagar,Chennai,2025-12-13,Tail Bone Pain,Musculoskeletal,3,Temporarily Unavailable,Patient reported being busy.,268,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-61AA4ED8,Chennai Anna Nagar,Chennai,2025-12-13,Asthma,Respiratory,0,Discontinued,Patient did not continue treatment.,268,High Risk,Contact Established,High,Discontinued
+PT-FA5B9269,Chennai Anna Nagar,Chennai,2025-12-13,Gastric Pain,Digestive,3,Other,Patient reported undergoing an operation.,268,Other,Contact Established,Medium,Other
+PT-540135C3,Chennai Anna Nagar,Chennai,2025-12-15,Sinus Problem,Respiratory,0,Other,Patient continued with consultation only.,266,Other,Contact Established,Medium,Other
+PT-1A6D54C3,Chennai Anna Nagar,Chennai,2025-12-19,Knee Joint Pain,Musculoskeletal,0,Other,Patient continued with consultation only.,262,Other,Contact Established,Medium,Other
+PT-A8F3AA38,Chennai Anna Nagar,Chennai,2025-12-23,Indigestion,Digestive,3,Other,Patient did not respond.,258,Other,Contact Established,Medium,Other
+PT-99CF158F,Chennai Anna Nagar,Chennai,2025-12-23,Rashes,Dermatological,0,Other,Patient continued with consultation only.,258,Other,Contact Established,Medium,Other
+PT-9E983088,Chennai Anna Nagar,Chennai,2025-12-24,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,257,High Risk,Contact Established,High,Discontinued
+PT-12E1CD62,Chennai Anna Nagar,Chennai,2025-12-27,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,254,High Risk,Contact Established,High,Discontinued
+PT-DA297733,Chennai Anna Nagar,Chennai,2025-12-29,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,252,High Risk,Contact Established,High,Discontinued
+PT-1756359B,Chennai Anna Nagar,Chennai,2026-08-01,Hair Fall,Dermatological,0,Discontinued,Patient did not continue treatment.,37,High Risk,Contact Established,High,Discontinued
+PT-AE9E8325,Chennai Anna Nagar,Chennai,2025-10-01,Hypertension,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,341,High Risk,Contact Established,High,Discontinued
+PT-CED83BA6,Chennai Anna Nagar,Chennai,2025-12-01,Burning Sensation,Neurological,2,Not Yet Contacted,No Remark,280,Pending,Not Contacted,Medium,Pending Follow-up
+PT-4F7EEBB8,Chennai Anna Nagar,Chennai,2026-01-14,Diabetes,Metabolic/Endocrine,0,Other,Patient continued with consultation only.,236,Other,Contact Established,Medium,Other
+PT-B3418454,Chennai Anna Nagar,Chennai,2026-01-18,Infertility,Renal/Urological,1,Not Yet Contacted,No Remark,232,Pending,Not Contacted,Medium,Pending Follow-up
+PT-1392960D,Chennai Anna Nagar,Chennai,2026-01-19,Lower Back Pain,Musculoskeletal,1,Not Yet Contacted,No Remark,231,Pending,Not Contacted,Medium,Pending Follow-up
+PT-AC18F648,Chennai Anna Nagar,Chennai,2026-01-20,Neck Pain,Musculoskeletal,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,230,High Risk,Contact Established,High,Switched Treatment
+PT-85F0A226,Chennai Anna Nagar,Chennai,2026-01-21,Burning Sensation,Neurological,1,Not Yet Contacted,No Remark,229,Pending,Not Contacted,Medium,Pending Follow-up
+PT-216E6D63,Chennai Anna Nagar,Chennai,2026-01-21,Fatty Liver,Digestive,0,Discontinued,Patient did not continue treatment.,229,High Risk,Contact Established,High,Discontinued
+PT-FAF4F3F4,Chennai Anna Nagar,Chennai,2026-01-22,Constipation,Digestive,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,228,High Risk,Contact Established,High,Switched Treatment
+PT-A2C6CDD3,Chennai Anna Nagar,Chennai,2026-01-23,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,227,High Risk,Contact Established,High,Discontinued
+PT-8BC189FD,Chennai Anna Nagar,Chennai,2026-01-25,Gastric Problem,Digestive,0,Discontinued,Patient did not continue treatment.,225,High Risk,Contact Established,High,Discontinued
+PT-712905DB,Chennai Anna Nagar,Chennai,2026-01-25,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,225,High Risk,Contact Established,High,Discontinued
+PT-373229C9,Chennai Anna Nagar,Chennai,2026-01-25,Hypertension and Burning Sensation,Metabolic/Endocrine,0,Not Yet Contacted,No Remark,225,Pending,Not Contacted,Medium,Pending Follow-up
+PT-66CCA39C,Chennai Anna Nagar,Chennai,2026-01-27,Gastric Problem,Digestive,1,Not Yet Contacted,No Remark,223,Pending,Not Contacted,Medium,Pending Follow-up
+PT-0BAAC2C5,Chennai Anna Nagar,Chennai,2026-01-27,Knee Joint Pain,Musculoskeletal,0,Discontinued,Patient did not continue treatment.,223,High Risk,Contact Established,High,Discontinued
+PT-7CC8AF1B,Chennai Anna Nagar,Chennai,2026-01-29,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,221,High Risk,Contact Established,High,Discontinued
+PT-2F490694,Chennai Anna Nagar,Chennai,2026-02-02,Knee Joint Pain,Musculoskeletal,0,Other,Patient reported a financial constraint.,217,Other,Contact Established,Medium,Other
+PT-C90EF195,Chennai Anna Nagar,Chennai,2025-10-02,Ankle Pain,Musculoskeletal,0,Discontinued,Patient did not continue treatment.,340,High Risk,Contact Established,High,Discontinued
+PT-55C06FAC,Chennai Anna Nagar,Chennai,2025-12-02,Unknown,Unknown,0,Discontinued,Patient did not continue treatment.,279,High Risk,Contact Established,High,Discontinued
+PT-EAE3C9A6,Chennai Anna Nagar,Chennai,2026-02-13,Knee Joint Pain,Musculoskeletal,2,Other,Patient reported undergoing an operation.,206,Other,Contact Established,Medium,Other
+PT-0F3597CD,Chennai Anna Nagar,Chennai,2026-02-13,Diabetes,Metabolic/Endocrine,0,Other,Treatment status recorded; specific reason not provided.,206,Other,Contact Established,Medium,Other
+PT-C0A66FE5,Chennai Anna Nagar,Chennai,2026-02-15,Diabetes,Metabolic/Endocrine,1,Not Yet Contacted,No Remark,204,Pending,Not Contacted,Medium,Pending Follow-up
+PT-822F46BF,Chennai Anna Nagar,Chennai,2026-02-18,Diabetes,Metabolic/Endocrine,3,No Response,Patient did not answer the call.,201,At Risk,Unreachable,Medium,Unknown
+PT-0AB3032D,Chennai Anna Nagar,Chennai,2026-02-20,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment and did not respond.,199,High Risk,Contact Established,High,Discontinued
+PT-4DB54B0C,Chennai Anna Nagar,Chennai,2026-02-20,Heel Pain,Musculoskeletal,0,Discontinued,Patient did not continue treatment.,199,High Risk,Contact Established,High,Discontinued
+PT-3D81EC5A,Chennai Anna Nagar,Chennai,2026-02-20,Knee Joint Pain,Musculoskeletal,0,Other,Patient reported a financial constraint.,199,Other,Contact Established,Medium,Other
+PT-067FDD7D,Chennai Anna Nagar,Chennai,2026-02-21,Diabetes and Hypertension,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,198,At Risk,Unreachable,High,Unknown
+PT-DB73F276,Chennai Anna Nagar,Chennai,2026-02-23,Hypothyroidism,Metabolic/Endocrine,1,No Response,Patient disconnected the call.,196,At Risk,Unreachable,High,Unknown
+PT-D03AB751,Chennai Anna Nagar,Chennai,2026-02-26,Diabetes and Hypertension,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,193,High Risk,Contact Established,High,Discontinued
+PT-A32D3A7F,Chennai Anna Nagar,Chennai,2026-02-26,White Patching,Dermatological,0,Other,Patient continued with consultation only.,193,Other,Contact Established,Medium,Other
+PT-6CB9E5CF,Chennai Anna Nagar,Chennai,2026-01-03,Kidney Problem,Renal/Urological,1,No Response,Patient did not answer the call.,247,At Risk,Unreachable,High,Unknown
+PT-CBB4841F,Chennai Anna Nagar,Chennai,2026-03-03,Cold,Respiratory,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,188,High Risk,Contact Established,High,Switched Treatment
+PT-D39E8717,Chennai Anna Nagar,Chennai,2026-03-03,Bloating,Digestive,2,No Response,Patient did not answer the call.,188,At Risk,Unreachable,High,Unknown
+PT-9CB6E16C,Chennai Anna Nagar,Chennai,2026-04-03,Knee Pain,Musculoskeletal,1,Other,Patient reported a financial constraint.,157,Other,Contact Established,Medium,Other
+PT-B477D7D7,Chennai Anna Nagar,Chennai,2026-05-03,Burning Sensation,Neurological,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,127,High Risk,Contact Established,High,Switched Treatment
+PT-F267BDDE,Chennai Anna Nagar,Chennai,2026-07-03,Hernia,Digestive,2,Temporarily Unavailable,Patient is currently out of station.,66,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-7B59A381,Chennai Anna Nagar,Chennai,2026-07-06,Hypertension,Metabolic/Endocrine,0,Other,Patient reported undergoing heart surgery.,63,Other,Contact Established,Medium,Other
+PT-97F30289,Chennai Anna Nagar,Chennai,2026-08-03,General Wellness,Wellness,4,Temporarily Unavailable,Patient reported being busy.,35,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-677AF3BC,Chennai Anna Nagar,Chennai,2026-08-03,Hernia,Digestive,1,Other,Patient reported a financial constraint.,35,Other,Contact Established,Medium,Other
+PT-6E62534A,Chennai Anna Nagar,Chennai,2025-11-03,Stiffness,Musculoskeletal,0,Other,Patient continued with consultation only.,308,Other,Contact Established,Medium,Other
+PT-7E46E5C0,Chennai Anna Nagar,Chennai,2025-11-03,Diabetes,Metabolic/Endocrine,1,Other,Patient did not respond.,308,Other,Contact Established,Medium,Other
+PT-0945A01F,Chennai Anna Nagar,Chennai,2025-12-03,Burning Sensation,Neurological,0,Other,Patient reported a financial constraint.,278,Other,Contact Established,Medium,Other
+PT-D0086088,Chennai Anna Nagar,Chennai,2025-12-03,Irregular Periods,Renal/Urological,0,Switched to Medicines/Other Treatment,Patient continued with medicines only.,278,High Risk,Contact Established,High,Switched Treatment
+PT-69B46B48,Chennai Anna Nagar,Chennai,2026-03-13,Diabetes and Nerve Pain,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,178,At Risk,Unreachable,High,Unknown
+PT-44B01CFD,Chennai Anna Nagar,Chennai,2026-03-13,Diabetes and Hypertension,Metabolic/Endocrine,0,Temporarily Unavailable,Patient is currently out of station.,178,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-B48AF5F4,Chennai Anna Nagar,Chennai,2026-03-13,Diabetes and Hypertension,Metabolic/Endocrine,0,No Response,Patient did not answer the call.,178,At Risk,Unreachable,High,Unknown
+PT-CD4EFCF7,Chennai Anna Nagar,Chennai,2026-03-16,Diabetes,Metabolic/Endocrine,2,Temporarily Unavailable,Patient is currently out of station.,175,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-D78FE34A,Chennai Anna Nagar,Chennai,2026-03-16,Diabetes,Metabolic/Endocrine,2,Temporarily Unavailable,Patient is currently out of station.,175,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-70836AB1,Chennai Anna Nagar,Chennai,2026-03-17,Diabetes and High Cholesterol,Metabolic/Endocrine,0,No Response,Patient did not answer the call.,174,At Risk,Unreachable,High,Unknown
+PT-A4FCA462,Chennai Anna Nagar,Chennai,2026-03-18,Knee Joint Pain,Musculoskeletal,0,Discontinued,Patient did not continue treatment.,173,High Risk,Contact Established,High,Discontinued
+PT-A3445CEE,Chennai Anna Nagar,Chennai,2026-03-20,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,171,High Risk,Contact Established,High,Discontinued
+PT-625B2A65,Chennai Anna Nagar,Chennai,2026-03-24,Back Pain,Musculoskeletal,1,Other,Patient reported cost concerns.,167,Other,Contact Established,Medium,Other
+PT-BE1508AA,Chennai Anna Nagar,Chennai,2026-03-24,Knee Joint Pain,Musculoskeletal,2,Switched to Medicines/Other Treatment,Patient preferred or continued with allopathic treatment.,167,High Risk,Contact Established,High,Switched Treatment
+PT-CA94AA12,Chennai Anna Nagar,Chennai,2026-03-26,Diabetes,Metabolic/Endocrine,1,Temporarily Unavailable,Patient is currently abroad.,165,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-284061B4,Chennai Anna Nagar,Chennai,2026-03-26,Skin Allergy,Dermatological,0,Other,Patient reported cost concerns.,165,Other,Contact Established,Medium,Other
+PT-5A92C133,Chennai Anna Nagar,Chennai,2026-08-04,Diabetes,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,34,At Risk,Unreachable,High,Unknown
+PT-8A5AF7D7,Chennai Anna Nagar,Chennai,2026-04-14,Diabetes and Hypertension,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,146,At Risk,Unreachable,High,Unknown
+PT-2D1B497B,Chennai Anna Nagar,Chennai,2026-04-15,Diabetes and Hypertension,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,145,At Risk,Unreachable,High,Unknown
+PT-3695D0A2,Chennai Anna Nagar,Chennai,2026-04-15,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,145,High Risk,Contact Established,High,Discontinued
+PT-B115E289,Chennai Anna Nagar,Chennai,2026-04-16,Hypertension,Metabolic/Endocrine,0,Discontinued,Patient is not interested in continuing treatment.,144,High Risk,Contact Established,High,Discontinued
+PT-BB86B79B,Chennai Anna Nagar,Chennai,2026-04-20,Lower Back Pain,Musculoskeletal,0,Temporarily Unavailable,ONLY MED&OUT OF STATION.,140,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-3D64DAD1,Chennai Anna Nagar,Chennai,2026-04-29,Asthma,Respiratory,2,Other,Patient reported a financial constraint.,131,Other,Contact Established,Medium,Other
+PT-057612AB,Chennai Anna Nagar,Chennai,2025-12-05,Rashes,Dermatological,2,Temporarily Unavailable,Patient is currently out of station.,276,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-92D2FB5A,Chennai Anna Nagar,Chennai,2025-12-05,Diabetes and Hypertension,Metabolic/Endocrine,0,Discontinued,Patient did not continue treatment.,276,High Risk,Contact Established,High,Discontinued
+PT-9F156AC9,Chennai Anna Nagar,Chennai,2026-05-14,Diabetes,Metabolic/Endocrine,2,Temporarily Unavailable,Patient is currently abroad.,116,At Risk,Temporarily Unavailable,Medium,Temporarily Paused
+PT-10630DF9,Chennai Anna Nagar,Chennai,2026-05-17,Irregular Periods,Renal/Urological,0,Other,Patient reported cost concerns and low interest in continuing treatment.,113,Other,Contact Established,Medium,Other
+PT-6FD36FDE,Chennai Anna Nagar,Chennai,2026-05-23,Diabetes,Metabolic/Endocrine,1,No Response,Patient did not answer the call.,107,At Risk,Unreachable,High,Unknown
+PT-567167CE,Chennai Anna Nagar,Chennai,2026-05-26,Diabetes,Metabolic/Endocrine,0,Discontinued,Patient is not interested in continuing treatment.,104,High Risk,Contact Established,High,Discontinued
+PT-ABFAA397,Chennai Anna Nagar,Chennai,2026-05-30,Wheezing,Respiratory,0,No Response,Patient did not answer the call.,100,At Risk,Unreachable,High,Unknown
