@@ -8,6 +8,7 @@ import re
 
 import pandas as pd
 import streamlit as st
+from src.analytics.operations_dashboard import render_operations_page
 
 try:
     import plotly.graph_objects as go
@@ -2073,6 +2074,528 @@ elif module == "Meta Campaign":
         patient-attribution fields.
     </div>
     """)
+
+# ============================================================
+# OPERATIONS MODULE
+# ============================================================
+
+st.markdown("""
+<div class="orbit-section-header">
+    <div>
+        <div class="orbit-section-kicker">OPERATIONS</div>
+        <div class="orbit-section-title">Operational Performance & Issue Management</div>
+        <div class="orbit-section-subtitle">
+            Branch-level operational issues, unresolved observations and facility findings
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+# ------------------------------------------------------------
+# LOAD OPERATIONAL DATA
+# ------------------------------------------------------------
+
+try:
+    operations_df = query("""
+        SELECT
+            issue_id,
+            issue,
+            branch,
+            status,
+            observed_date
+        FROM issue_management_history
+        ORDER BY observed_date DESC
+    """)
+
+except Exception:
+    operations_df = pd.DataFrame()
+
+
+# ------------------------------------------------------------
+# FALLBACK FOR DIFFERENT DATE COLUMN STRUCTURES
+# ------------------------------------------------------------
+
+if operations_df.empty:
+
+    try:
+        operations_df = query("""
+            SELECT
+                issue_id,
+                issue,
+                branch,
+                status,
+                date AS observed_date
+            FROM issue_management_history
+            ORDER BY date DESC
+        """)
+
+    except Exception:
+        operations_df = pd.DataFrame()
+
+
+# ------------------------------------------------------------
+# STANDARDISE COLUMNS
+# ------------------------------------------------------------
+
+if not operations_df.empty:
+
+    operations_df.columns = [
+        str(c).strip().lower()
+        for c in operations_df.columns
+    ]
+
+    if "status" in operations_df.columns:
+        operations_df["status"] = (
+            operations_df["status"]
+            .fillna("")
+            .astype(str)
+            .str.strip()
+        )
+
+    if "branch" in operations_df.columns:
+        operations_df["branch"] = (
+            operations_df["branch"]
+            .fillna("Unknown")
+            .astype(str)
+            .str.strip()
+        )
+
+    if "issue" in operations_df.columns:
+        operations_df["issue"] = (
+            operations_df["issue"]
+            .fillna("Issue not recorded")
+            .astype(str)
+            .str.strip()
+        )
+
+
+# ------------------------------------------------------------
+# OPERATIONS KPI CALCULATIONS
+# ------------------------------------------------------------
+
+if not operations_df.empty:
+
+    total_observations = len(operations_df)
+
+    unique_issues = (
+        operations_df["issue_id"].nunique()
+        if "issue_id" in operations_df.columns
+        else operations_df["issue"].nunique()
+    )
+
+    unresolved_observations = (
+        operations_df["status"]
+        .str.lower()
+        .eq("unresolved")
+        .sum()
+        if "status" in operations_df.columns
+        else 0
+    )
+
+    branches_monitored = (
+        operations_df["branch"]
+        .replace("", "Unknown")
+        .nunique()
+        if "branch" in operations_df.columns
+        else 0
+    )
+
+else:
+
+    total_observations = 0
+    unique_issues = 0
+    unresolved_observations = 0
+    branches_monitored = 0
+
+
+# ------------------------------------------------------------
+# KPI CARDS
+# ------------------------------------------------------------
+
+op1, op2, op3, op4 = st.columns(4)
+
+with op1:
+    st.markdown(
+        f"""
+        <div class="orbit-kpi-card">
+            <div class="orbit-kpi-label">ISSUES TRACKED</div>
+            <div class="orbit-kpi-value">{unique_issues:,}</div>
+            <div class="orbit-kpi-meta">Unique operational issues</div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+with op2:
+    st.markdown(
+        f"""
+        <div class="orbit-kpi-card">
+            <div class="orbit-kpi-label">UNRESOLVED OBSERVATIONS</div>
+            <div class="orbit-kpi-value">{unresolved_observations:,}</div>
+            <div class="orbit-kpi-meta">Recorded as unresolved</div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+with op3:
+    st.markdown(
+        f"""
+        <div class="orbit-kpi-card">
+            <div class="orbit-kpi-label">OBSERVATIONS</div>
+            <div class="orbit-kpi-value">{total_observations:,}</div>
+            <div class="orbit-kpi-meta">Operational history records</div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+with op4:
+    st.markdown(
+        f"""
+        <div class="orbit-kpi-card">
+            <div class="orbit-kpi-label">BRANCHES MONITORED</div>
+            <div class="orbit-kpi-value">{branches_monitored:,}</div>
+            <div class="orbit-kpi-meta">Branches represented in tracker</div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+
+st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+
+
+# ------------------------------------------------------------
+# BRANCH FILTER
+# ------------------------------------------------------------
+
+if not operations_df.empty and "branch" in operations_df.columns:
+
+    branch_options = ["All Branches"] + sorted(
+        [
+            x for x in operations_df["branch"].dropna().unique()
+            if str(x).strip()
+        ]
+    )
+
+    selected_operations_branch = st.selectbox(
+        "Operational Branch",
+        branch_options,
+        key="operations_branch_filter"
+    )
+
+    if selected_operations_branch != "All Branches":
+
+        filtered_operations = operations_df[
+            operations_df["branch"] == selected_operations_branch
+        ].copy()
+
+    else:
+
+        filtered_operations = operations_df.copy()
+
+else:
+
+    filtered_operations = operations_df.copy()
+
+
+# ------------------------------------------------------------
+# OPERATIONS LAYOUT
+# ------------------------------------------------------------
+
+left_ops, right_ops = st.columns([1.45, 1])
+
+
+# ------------------------------------------------------------
+# LEFT — ISSUE REGISTER
+# ------------------------------------------------------------
+
+with left_ops:
+
+    st.markdown(
+        """
+        <div class="orbit-panel-title">
+            Operational Issue Register
+        </div>
+        <div class="orbit-panel-subtitle">
+            Recorded branch-level observations and their current status
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    if not filtered_operations.empty:
+
+        display_ops = filtered_operations.copy()
+
+        # Keep latest / relevant fields readable
+        display_columns = []
+
+        if "issue_id" in display_ops.columns:
+            display_columns.append("issue_id")
+
+        if "issue" in display_ops.columns:
+            display_columns.append("issue")
+
+        if "branch" in display_ops.columns:
+            display_columns.append("branch")
+
+        if "status" in display_ops.columns:
+            display_columns.append("status")
+
+        if "observed_date" in display_ops.columns:
+            display_columns.append("observed_date")
+
+        display_ops = display_ops[display_columns].copy()
+
+        rename_map = {
+            "issue_id": "Issue ID",
+            "issue": "Operational Issue",
+            "branch": "Branch",
+            "status": "Status",
+            "observed_date": "Observed Date"
+        }
+
+        display_ops = display_ops.rename(columns=rename_map)
+
+        # Format status
+        if "Status" in display_ops.columns:
+
+            display_ops["Status"] = display_ops["Status"].replace(
+                "",
+                "Not Recorded"
+            )
+
+        # Limit table height
+        st.dataframe(
+            display_ops,
+            use_container_width=True,
+            hide_index=True,
+            height=390
+        )
+
+    else:
+
+        st.info(
+            "No operational issue records are currently available "
+            "for the selected branch."
+        )
+
+
+# ------------------------------------------------------------
+# RIGHT — STATUS SUMMARY
+# ------------------------------------------------------------
+
+with right_ops:
+
+    st.markdown(
+        """
+        <div class="orbit-panel-title">
+            Issue Status Summary
+        </div>
+        <div class="orbit-panel-subtitle">
+            Current status distribution in the operational tracker
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    if not filtered_operations.empty and "status" in filtered_operations.columns:
+
+        status_df = filtered_operations.copy()
+
+        status_df["Status Display"] = status_df["status"].apply(
+            lambda x: "Not Recorded" if str(x).strip() == "" else str(x).strip()
+        )
+
+        status_summary = (
+            status_df["Status Display"]
+            .value_counts()
+            .reset_index()
+        )
+
+        status_summary.columns = ["Status", "Observations"]
+
+        st.dataframe(
+            status_summary,
+            use_container_width=True,
+            hide_index=True,
+            height=210
+        )
+
+        st.caption(
+            "Blank status values are shown as 'Not Recorded'; "
+            "they are not treated as resolved."
+        )
+
+    else:
+
+        st.info("No status information available.")
+
+
+# ------------------------------------------------------------
+# BRANCH-WISE ISSUE DISTRIBUTION
+# ------------------------------------------------------------
+
+st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+
+branch_left, branch_right = st.columns([1.15, 1])
+
+
+with branch_left:
+
+    st.markdown(
+        """
+        <div class="orbit-panel-title">
+            Branch-wise Operational Load
+        </div>
+        <div class="orbit-panel-subtitle">
+            Number of recorded operational observations
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    if not operations_df.empty and "branch" in operations_df.columns:
+
+        branch_summary = (
+            operations_df
+            .groupby("branch")
+            .size()
+            .reset_index(name="Observations")
+            .sort_values("Observations", ascending=False)
+        )
+
+        st.bar_chart(
+            branch_summary.set_index("branch")["Observations"],
+            height=280
+        )
+
+    else:
+
+        st.info("Branch-level operational data unavailable.")
+
+
+# ------------------------------------------------------------
+# OPERATIONAL PRIORITY VIEW
+# ------------------------------------------------------------
+
+with branch_right:
+
+    st.markdown(
+        """
+        <div class="orbit-panel-title">
+            Priority Operational Findings
+        </div>
+        <div class="orbit-panel-subtitle">
+            Frequently recorded operational issues requiring management attention
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    if not filtered_operations.empty and "issue" in filtered_operations.columns:
+
+        priority_df = (
+            filtered_operations
+            .groupby("issue")
+            .size()
+            .reset_index(name="Observations")
+            .sort_values("Observations", ascending=False)
+            .head(8)
+        )
+
+        priority_df = priority_df.rename(
+            columns={
+                "issue": "Operational Issue"
+            }
+        )
+
+        st.dataframe(
+            priority_df,
+            use_container_width=True,
+            hide_index=True,
+            height=280
+        )
+
+    else:
+
+        st.info("No operational findings available.")
+
+
+# ------------------------------------------------------------
+# MANAGEMENT INTERPRETATION
+# ------------------------------------------------------------
+
+st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+
+if not filtered_operations.empty:
+
+    if unresolved_observations > 0:
+
+        st.markdown(
+            f"""
+            <div class="orbit-insight-box">
+                <div class="orbit-insight-title">
+                    MANAGEMENT IMPLICATION
+                </div>
+                <div class="orbit-insight-text">
+                    The operational tracker contains
+                    <strong>{unresolved_observations:,}</strong>
+                    observations explicitly marked as unresolved.
+                    Management attention should focus on recurring issues,
+                    branch-level concentration and closure discipline.
+                    Blank status values should be treated as
+                    <strong>not recorded</strong>, rather than assumed resolved.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    else:
+
+        st.markdown(
+            """
+            <div class="orbit-insight-box">
+                <div class="orbit-insight-title">
+                    INFERENCE
+                </div>
+                <div class="orbit-insight-text">
+                    No observations are explicitly marked as unresolved
+                    in the current filtered operational dataset.
+                    Status values that are blank remain unclassified and
+                    should not be interpreted as resolved.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+else:
+
+    st.markdown(
+        """
+        <div class="orbit-insight-box">
+            <div class="orbit-insight-title">
+                DATA AVAILABILITY
+            </div>
+            <div class="orbit-insight-text">
+                No operational records are available for the selected view.
+                No operational conclusion has been inferred.
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+
+# ------------------------------------------------------------
+# END OPERATIONS MODULE
+# ------------------------------------------------------------
+
+st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)
 
 # ============================================================
 # MODULE: ASK ORBIT.AI (COPILOT)
